@@ -1,23 +1,31 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  color: #212121;
 }
 .header-button {
   background-color: #2f303a;
   color: #ffffff;
   font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
 }
 .lorem-heading {
-  color: #212121;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .lorem-paragraph {
   color: #757575;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 .heading {
-  color: #212121;
   font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
 }
 .team {
   background-color: #f5f4fa;
@@ -26,12 +34,15 @@ body {
   background-color: #ffffff;
 }
 .team-name {
-  color: #212121;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
 }
 .team-position {
   color: #757575;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 .logo {
@@ -39,17 +50,26 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
+  line-height: 1.19;
+  font-size: 26px;
 }
 
 .bluelogo {
   color: #2196f3;
 }
+.whitelogo {
+  color: #ffffff;
+}
 
 .bluelink,
 .bluelink-active {
-  color: #212121;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
   text-decoration: none;
+}
+.bluelink:visited {
+  color: #212121;
 }
 .bluelink-active {
   color: #2196f3;
@@ -57,22 +77,28 @@ body {
 .header-address {
   color: #757575;
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+
   text-decoration: none;
   font-weight: 500;
 }
 .bluelink:hover,
 .bluelink:focus,
 .header-address:hover,
-.header-address:focus {
+.header-address:focus,
+.link:hover,
+.link:focus {
   color: #2196f3;
-  font-weight: 500;
   cursor: pointer;
   text-decoration: none;
 }
 
 .button {
   background-color: #f5f4fa;
-  color: #212121;
+  font-size: 16px;
+  line-height: 1.62;
+
   cursor: pointer;
   font-weight: 500;
 }
@@ -81,6 +107,16 @@ body {
   color: #ffffff;
   cursor: pointer;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+}
+.button-active-portfolio {
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 .button:hover,
 .button:focus {
@@ -88,9 +124,10 @@ body {
   color: #ffffff;
   cursor: pointer;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 .project-title {
-  color: #212121;
   font-weight: 700;
 }
 .project-type {
@@ -106,6 +143,8 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
 }
 .footer-address li,
 .link {
