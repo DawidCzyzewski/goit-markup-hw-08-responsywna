@@ -1,0 +1,114 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+.header-button {
+  background-color: #2f303a;
+  color: #ffffff;
+  font-weight: 900;
+}
+.lorem-heading {
+  color: #212121;
+  font-weight: 700;
+}
+.lorem-paragraph {
+  color: #757575;
+  font-weight: 400;
+}
+.heading {
+  color: #212121;
+  font-weight: 700;
+}
+.team {
+  background-color: #f5f4fa;
+}
+.team-card {
+  background-color: #ffffff;
+}
+.team-name {
+  color: #212121;
+  font-weight: 500;
+}
+.team-position {
+  color: #757575;
+  font-weight: 400;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.bluelogo {
+  color: #2196f3;
+}
+
+.bluelink,
+.bluelink-active {
+  color: #212121;
+  font-weight: 500;
+  text-decoration: none;
+}
+.bluelink-active {
+  color: #2196f3;
+}
+.header-address {
+  color: #757575;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 500;
+}
+.bluelink:hover,
+.bluelink:focus,
+.header-address:hover,
+.header-address:focus {
+  color: #2196f3;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #f5f4fa;
+  color: #212121;
+  cursor: pointer;
+  font-weight: 500;
+}
+.button-active {
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.button:hover,
+.button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.project-title {
+  color: #212121;
+  font-weight: 700;
+}
+.project-type {
+  color: #757575;
+  font-weight: 400;
+}
+.footer {
+  background-color: #2f303a;
+}
+.footer-address,
+.footer-address > p {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+}
+.footer-address li,
+.link {
+  text-decoration: none;
+  color: #ffffff99;
+}
