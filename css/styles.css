@@ -6,7 +6,7 @@
   --darkfooter: #2f303a;
   --grey: #f5f4fa;
   --darkgrey: #757575;
-  --whitetrans: #ffffff99;
+  --whitetrans: #ffffff60;
 }
 
 body {
@@ -77,6 +77,9 @@ body {
   line-height: 1.14;
   text-decoration: none;
 }
+.bluelink {
+  color: var(--dark);
+}
 .bluelink:visited {
   color: var(--dark);
 }
@@ -136,6 +139,7 @@ body {
   line-height: 1.62;
 }
 .project-title {
+  font-size: 18px;
   font-weight: 700;
 }
 .project-type {
