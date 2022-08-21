@@ -6,7 +6,7 @@
   --darkfooter: #2f303a;
   --grey: #f5f4fa;
   --darkgrey: #757575;
-  --whitetrans: #ffffff60;
+  --whitetrans: #ffffff99;
 }
 
 body {
@@ -16,11 +16,13 @@ body {
 }
 .header-button {
   background-color: var(--darkfooter);
-  color: var(--white);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
+}
+.header-text {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  color: var(--white);
 }
 .lorem-heading {
   font-weight: 700;
