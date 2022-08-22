@@ -109,14 +109,15 @@ body {
 
 .button {
   background-color: var(--grey);
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 1.62;
-
   cursor: pointer;
   font-weight: 500;
 }
 .button-active {
   background-color: var(--blue);
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   color: var(--white);
   cursor: pointer;
   font-weight: 500;
@@ -125,6 +126,7 @@ body {
 }
 .button-active-portfolio {
   background-color: var(--blue);
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   color: var(--white);
   cursor: pointer;
   font-weight: 500;
