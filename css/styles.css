@@ -13,21 +13,62 @@ body {
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-style: normal;
   color: var(--dark);
+  max-width: 1600px;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+}
+.page-header {
+  display: flex;
+  align-items: center;
+  padding: 0 auto;
+}
+.address-header {
+  padding: 0 auto;
+}
+.nav-link,
+.header-address {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-link:not(:last-child) {
+  padding-right: 46px;
+}
+.address-heading {
+  display: flex;
+  justify-content: right;
+}
+.address-link {
+  padding-right: 50px;
 }
 .header-button {
   background-color: var(--darkfooter);
   text-align: center;
+  height: 600px;
+  width: 100%;
 }
 .header-text {
+  padding: 200px 452px 0px 452px;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   color: var(--white);
 }
+.lorem:not(:last-child) {
+  padding-right: 30px;
+}
 .lorem-heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
 }
 .lorem-paragraph {
   color: var(--darkgrey);
@@ -38,9 +79,17 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 }
+.photo-csz:not(:last-child) {
+  padding-right: 30px;
+}
+
 .team {
   background-color: var(--grey);
+}
+.team-section {
+  width: 1170px;
 }
 .team-card {
   background-color: var(--white);
@@ -123,6 +172,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
+}
+main .button-active {
+  margin-bottom: 200px;
 }
 .button-active-portfolio {
   background-color: var(--blue);
