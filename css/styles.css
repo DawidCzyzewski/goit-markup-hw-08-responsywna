@@ -13,7 +13,8 @@ body {
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-style: normal;
   color: var(--dark);
-  max-width: 1600px;
+  width: 1600px;
+  align-items: center;
 }
 ul {
   list-style: none;
@@ -93,6 +94,7 @@ ul {
 }
 .team-card {
   background-color: var(--white);
+  margin-right: 30px;
 }
 .team-name {
   font-weight: 500;
@@ -164,6 +166,7 @@ ul {
   cursor: pointer;
   font-weight: 500;
 }
+
 .button-active {
   background-color: var(--blue);
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
