@@ -77,7 +77,7 @@ p {
   line-height: 1.36;
   color: var(--white);
 }
-.lorem-section {margin: 94 auto;}
+.lorem-section {margin: 94px auto;}
 .lorem:not(:last-child) {
   padding-right: 30px;
 }
