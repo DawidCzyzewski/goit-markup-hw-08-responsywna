@@ -21,36 +21,40 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <header class="page-header">
+    <header class="page-header container">
+      <div class="logo-div">
         <a href="./index.html" class="logo"
           ><span class="bluelogo">Web</span>Studio</a
         >
-        <nav class="address-header">
-          <ul class="flex">
-            <li class="nav-link"><a href="./index.html" class="bluelink-active">Agencja</a></li>
-            <li class="nav-link"><a href="./portfolio.html" class="bluelink">Portfolio</a></li>
-            <li class="nav-link"><a href="#address" class="bluelink">Kontakt</a></li>
-          </ul>
-        </nav>
-        <address class="address-heading">
-          <ul class="flex">
-            <li class="address-link">
-              <a href="mailto:info@devstudio.com" class="header-address"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+48111111111" class="header-address"
-                >+48 111 111 111</a
-              >
-            </li>
-          </ul>
-        </address>
-      </header>
-      <main>
-        <section class="portfolio">
-          <ul>
+      </div>
+      <nav class="address-header">
+        <ul class="nav-links">
+          <li class="nav-link">
+            <a href="./index.html" class="bluelink-active">Agencja</a>
+          </li>
+          <li class="nav-link">
+            <a href="./portfolio.html" class="bluelink">Portfolio</a>
+          </li>
+          <li class="nav-link">
+            <a href="#address" class="bluelink">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="address-heading">
+        <li class="address-link">
+          <a href="mailto:info@devstudio.com" class="header-address"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+48111111111" class="header-address">+48 111 111 111</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <ul class="buttons-portfolio">
             <li>
               <button type="button" class="button button-active-portfolio">
                 Wszystkie
@@ -63,150 +67,136 @@
           </ul>
           <ul class="portfolio-elements">
             <li class="portfolio-element">
-              <figure>
-                <img
-                  src="./images/technocrack.jpg"
-                  alt="Strona internetowa wyświetlana na laptopie"
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <p class="project-title">Technocrack</p>
-                  <p class="project-type">Strona internetowa</p>
-                </figcaption>
-              </figure>
+              <img
+                src="./images/technocrack.jpg"
+                alt="Strona internetowa wyświetlana na laptopie"
+                width="370"
+                height="294"
+              />
+              <ul class="portfolio-projects-describe">
+                <li class="project-title">Technocrack</li>
+                <li class="project-type">Strona internetowa</li>
+              </ul>
             </li>
             <li class="portfolio-element">
-              <figure>
-                <img
-                  src="./images/neworlean.jpg"
-                  alt="Członkowie drużyn koszykarskich New Orlean oraz Golden Star walczący o piłkę"
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <p class="project-title">Grafika New Orlean vs Golden Star</p>
-                  <p class="project-type">Dizajn</p>
-                </figcaption>
-              </figure>
+              <img
+                src="./images/neworlean.jpg"
+                alt="Członkowie drużyn koszykarskich New Orlean oraz Golden Star walczący o piłkę"
+                width="370"
+                height="294"
+              />
+              <ul class="portfolio-projects-describe">
+                <li class="project-title">Grafika New Orlean vs Golden Star</li>
+                <li class="project-type">Dizajn</li>
+              </ul>
             </li>
             <li class="portfolio-element">
-              <figure>
-                <img
-                  src="./images/seafood.jpg"
-                  alt="Logo restauracji The Seafood z rekinem w tle"
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <p class="project-title">Restauracja Seafood</p>
-                  <p class="project-type">Aplikacja</p>
-                </figcaption>
-              </figure>
+              <img
+                src="./images/seafood.jpg"
+                alt="Logo restauracji The Seafood z rekinem w tle"
+                width="370"
+                height="294"
+              />
+              <ul class="portfolio-projects-describe">
+                <li class="project-title">Restauracja Seafood</li>
+                <li class="project-type">Aplikacja</li>
+              </ul>
             </li>
             <li class="portfolio-element">
-              <figure>
-                <img
-                  src="./images/prime.jpg"
-                  alt="Słuchawki nauszne"
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <p class="project-title">Projekt Prime</p>
-                  <p class="project-type">Marketing</p>
-                </figcaption>
-              </figure>
+              <img
+                src="./images/prime.jpg"
+                alt="Słuchawki nauszne"
+                width="370"
+                height="294"
+              />
+              <ul class="portfolio-projects-describe">
+                <li class="project-title">Projekt Prime</li>
+                <li class="project-type">Marketing</li>
+              </ul>
             </li>
             <li class="portfolio-element">
-              <figure>
-                <img
-                  src="./images/boxes.jpg"
-                  alt="Dwa pudełka leżące obok siebie, białe oraz brązowe"
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <p class="project-title">Projekt Boxes</p>
-                  <p class="project-type">Aplikacja</p>
-                </figcaption>
-              </figure>
+              <img
+                src="./images/boxes.jpg"
+                alt="Dwa pudełka leżące obok siebie, białe oraz brązowe"
+                width="370"
+                height="294"
+              />
+              <ul class="portfolio-projects-describe">
+                <li class="project-title">Projekt Boxes</li>
+                <li class="project-type">Aplikacja</li>
+              </ul>
             </li>
             <li class="portfolio-element">
-              <figure>
-                <img
-                  src="./images/inspiration.jpg"
-                  alt="Ekran, na którym wyświetlana jest strona internetowa"
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <p class="project-title">Inspiration has no Borders</p>
-                  <p class="project-type">Strona internetowa</p>
-                </figcaption>
-              </figure>
+              <img
+                src="./images/inspiration.jpg"
+                alt="Ekran, na którym wyświetlana jest strona internetowa"
+                width="370"
+                height="294"
+              />
+              <ul class="portfolio-projects-describe">
+                <li class="project-title">Inspiration has no Borders</li>
+                <li class="project-type">Strona internetowa</li>
+              </ul>
             </li>
             <li class="portfolio-element">
-              <figure>
-                <img
-                  src="./images/limited.jpg"
-                  alt="Otwarty magazyn Limited Edition"
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <p class="project-title">Magazyn Limited Edition</p>
-                  <p class="project-type">Dizajn</p>
-                </figcaption>
-              </figure>
+              <img
+                src="./images/limited.jpg"
+                alt="Otwarty magazyn Limited Edition"
+                width="370"
+                height="294"
+              />
+              <ul class="portfolio-projects-describe">
+                <li class="project-title">Magazyn Limited Edition</li>
+                <li class="project-type">Dizajn</li>
+              </ul>
             </li>
             <li class="portfolio-element">
-              <figure>
-                <img
-                  src="./images/lab.jpg"
-                  alt="Przywieszka drewniana z ułożonymi pionowo napisami LAB EL TAG"
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <p class="project-title">Projekt LAB</p>
-                  <p class="project-type">Marketing</p>
-                </figcaption>
-              </figure>
+              <img
+                src="./images/lab.jpg"
+                alt="Przywieszka drewniana z ułożonymi pionowo napisami LAB EL TAG"
+                width="370"
+                height="294"
+              />
+              <ul class="portfolio-projects-describe">
+                <li class="project-title">Projekt LAB</li>
+                <li class="project-type">Marketing</li>
+              </ul>
             </li>
             <li class="portfolio-element">
-              <figure>
-                <img
-                  src="./images/business.jpg"
-                  alt="Osoba trzymająca dłonie na laptopie, na którego ekranie wyświetla się strona Growing Business"
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <p class="project-title">Growing Business</p>
-                  <p class="project-type">Aplikacja</p>
-                </figcaption>
-              </figure>
+              <img
+                src="./images/business.jpg"
+                alt="Osoba trzymająca dłonie na laptopie, na którego ekranie wyświetla się strona Growing Business"
+                width="370"
+                height="294"
+              />
+              <ul class="portfolio-projects-describe">
+                <li class="project-title">Growing Business</li>
+                <li class="project-type">Aplikacja</li>
+              </ul>
             </li>
           </ul>
-        </section>
-      </main>
-      <footer class="footer">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-footer">
         <a href="./index.html" class="logo whitelogo"
           ><span class="bluelogo">Web</span>Studio</a
         >
         <address class="footer-address" id="address">
           <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-          <ul>
+          <ul class="footer-contact">
             <li>
               <a href="mailto:info@example.com" class="link"
                 >info@example.com</a
               >
             </li>
-            <li><a href="tel:+48111111111" class="link">+48 111 111 111</a></li>
+            <li>
+              <a href="tel:+48111111111" class="link">+48 111 111 111</a>
+            </li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
