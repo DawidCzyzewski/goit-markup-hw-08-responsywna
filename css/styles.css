@@ -35,7 +35,7 @@ p {
 .container {
   width: 100%;
   max-width: 1200px;
-  padding: 0 15px;
+  padding: 0;
   margin: 0 auto;
 }
 .container-footer {
@@ -260,10 +260,11 @@ p {
 .project-title {
   font-size: 18px;
   font-weight: 700;
-  padding: 20px 0 4px;
+  padding: 20px 24px 4px;
 }
 .project-type {
   color: var(--darkgrey);
+  padding: 0 24px 20px;
 }
 .buttons-portfolio {
   display: flex;
