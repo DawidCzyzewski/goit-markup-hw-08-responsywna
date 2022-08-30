@@ -248,10 +248,11 @@ img {
   flex-wrap: wrap;
   padding: 0;
   gap: 30px;
-  flex-basis: calc((100% - 60px) / 3);
 }
-.portfolio-element {
+
+.portfolio-projects-describe {
   border: 1px solid #eeeeee;
+  /* flex-basis: calc((100% - 60px) / 3); */
 }
 .button:hover,
 .button:focus {
