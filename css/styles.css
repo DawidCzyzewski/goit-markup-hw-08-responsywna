@@ -252,7 +252,7 @@ img {
 
 .portfolio-projects-describe {
   border: 1px solid #eeeeee;
-  /* flex-basis: calc((100% - 60px) / 3); */
+  flex-basis: calc((100% - 60px) / 3);
 }
 .button:hover,
 .button:focus {
