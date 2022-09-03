@@ -96,6 +96,7 @@ img {
 .company-link:focus .icon-company {
   fill: var(--blue);
   border-color: var(--blue);
+  cursor: pointer;
 }
 .header-text {
   font-size: 44px;
@@ -202,6 +203,7 @@ img {
 .socialicon:focus {
   background-color: var(--blue);
   fill: var(--white);
+  cursor: pointer;
 }
 .company-logos-section {
   display: flex;
@@ -221,6 +223,7 @@ img {
 .company-logos:focus {
   border: 1px solid var(--blue);
   fill: var(--blue);
+  cursor: pointer;
 }
 
 .icon-company {
@@ -277,6 +280,7 @@ img {
   color: var(--blue);
   text-decoration: none;
   fill: var(--blue);
+  cursor: pointer;
 }
 .icon-address {
   margin-right: 10px;
@@ -336,6 +340,7 @@ img {
 .podrtolio-element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 .button:hover,
 .button:focus {
@@ -347,6 +352,7 @@ img {
   line-height: 1.62;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 .project-title {
   font-size: 18px;
