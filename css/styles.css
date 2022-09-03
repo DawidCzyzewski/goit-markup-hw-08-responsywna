@@ -85,7 +85,12 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(../images/buttonbackground.jpg), rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/buttonbackground.jpg);
 }
 .header-text {
   font-size: 44px;
@@ -211,6 +216,7 @@ img {
 .company-logos:hover,
 .company-logos:focus {
   border: 1px solid var(--blue);
+  fill: var(--blue);
 }
 
 .icon-company {
@@ -270,14 +276,12 @@ img {
 .link:focus {
   color: var(--blue);
   text-decoration: none;
+  fill: var(--blue);
 }
 .icon-address {
   margin-right: 10px;
 }
-.icon-address:hover,
-.icon-address:focus {
-  fill: var(--blue);
-}
+
 .button {
   background-color: var(--grey);
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
