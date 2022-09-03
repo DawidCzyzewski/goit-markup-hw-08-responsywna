@@ -44,12 +44,12 @@ img {
   flex-direction: row;
   display: flex;
 }
+
 .container-footer {
-  width: 100%;
+  /* width: 100%; */
   max-width: 1200px;
   padding: 60px 15px;
-  margin: 0 auto;
-  flex-grow: 1;
+  margin-right: 70px;
 }
 .section {
   padding: 94px 0;
@@ -381,12 +381,7 @@ img {
   flex-direction: row;
   align-items: center;
 }
-.aside {
-  width: 531px;
-  margin-left: 215px;
-  padding-left: 0;
-  padding-right: 0;
-}
+
 .footer-address,
 .footer-address p {
   text-decoration: none;
