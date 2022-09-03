@@ -92,6 +92,11 @@ img {
     ),
     url(../images/buttonbackground.jpg);
 }
+.company-link:hover .icon-company,
+.company-link:focus .icon-company {
+  fill: var(--blue);
+  border-color: var(--blue);
+}
 .header-text {
   font-size: 44px;
   font-weight: 900;
@@ -221,10 +226,6 @@ img {
 
 .icon-company {
   fill: #afb1b8;
-}
-.icon-company:hover,
-.icon-company:focus {
-  fill: var(--blue);
 }
 
 .logo {
