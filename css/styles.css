@@ -196,13 +196,12 @@ img {
   fill: #afb1b8;
 }
 
-.icon-team:hover,
-.icon-team:focus {
-  fill: var(--white);
-}
+.socialicon:hover .icon-team,
+.socialicon:focus .icon-team,
 .socialicon:hover,
 .socialicon:focus {
   background-color: var(--blue);
+  fill: var(--white);
 }
 .company-logos-section {
   display: flex;
