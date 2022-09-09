@@ -1,56 +1,86 @@
-# goit-markup-hw-04
+# goit-markup-hw-05
 
-Czwarta praca domowa GoIT
+Projekt
 
-Kryteria:
-«A1» W katalogu głównym projektu znajduje się folder images z obrazami.
+«A1» Wszystkie style są zapisane w jednym pliku styles.css, który znajduje się w folderze css.
 
-«A2» Wszystkie obrazy wektorowe (ikony) są gromadzone w sprite SVG icons.svg, który znajduje się w folderze images.
+«A2» Kod źródłowy jest sformatowany za pomocą Prettier.
 
-«A3» Wszystkie obrazy wektorowe są zoptymalizowane.
+«A3» Wszystkie obrazy i zawartość tekstowa są z układu.
 
-«A4» W katalogu głównym projektu znajduje się folder css z plikami stylów.
+«A4» Wszystkie strony HTML mają normalizator stylu modern-normalize.
 
-«A5» Wszystkie style są zapisane w jednym pliku styles.css, który znajduje się w folderze css
+«A5» Kod jest napisany zgodnie z tutorialem.
 
-«A6» W nazwach plików nie ma wielkich liter, spacji i transliteracji, a jedynie litery i słowa w języku angielskim.
-
-«A7» Kod źródłowy jest sformatowany za pomocą Prettier.
-
-«A8» Wszystkie obrazy i zawartość tekstowa są z układu.
-
-«A9» Wszystkie strony HTML mają normalizator stylu modern-normalize.
-
-«A10» Kod jest napisany zgodnie z tutorialem.
+«A6» Skrypt do okna modalnego jest zawarty w HTML w oddzielnym pliku modal.js.
 Znaczniki HTML
 
-«B1» Wszystkie ikony wykorzystują grafikę wektorową w formacie svg.
+«B1» Wykonane jest oznaczenie znacznikami HTML wszystkich elementów układu.
 
-«B2» Ikony SVG są poprawnie eksportowane. Podczas eksportowania wybierana jest „grupa”, a nie sam wektor.
-
-«B3» Wszystkie ikony z SVG sprite zostały dodane do HTML za pomocą tagów <svg> i <use>
-
-«B4» Rozmiary ikon są wzięte z układu i ustawione dla elementu <svg> w pliku HTML.
-
-«B5» W bloku Kontaktów w nagłówku dodano ikony koperty i telefonu.
-
-«B6» Do sekcji Nasze atuty są dodane ikony.
-
-«B7» Do sekcji Nasz zespół dodano ikony mediów społecznościowych.
-
-«B8» Do sekcji Nasi klienci dodano ikony firm.
-
-«B9» Do stopki dodano ikony mediów społecznościowych.
+«B2» Tagi są używane zgodnie z ich znaczeniem semantycznym.
 Stylizacja
 
-«C1» Jako tło tworzony jest duży obraz z efektem przyciemnienia (pod nagłówkiem). Do przyciemnienia stosuje się wielowarstwowe tło z gradientem.
+«C1» Dla wszystkich efektów najechania kursorem i focusu (kolor, tło, cień) wykonywany jest transition. Czas - 250ms, funkcja rozkładu czasu - cubic-bezier(0.4, 0, 0.2, 1).
 
-«C2» Obraz tła w bloku pod nagłówkiem nie rozciąga się szerzej niż jego oryginalny rozmiar 1600рх.
+«C2» Właściwości, które będą animowane są wyraźnie określone w przejściach i animacjach. Nigdzie nie ma wartości all.
 
-«C3» Karty sekcji Nasz zespół mają trwały efekt cienia.
+«C3» W sekcji Czym się zajmujemy tekst z tłem jest umieszczony nad obrazem.
 
-«C4» Karty strony Portfolio mają efekt cienia po najechaniu kursorem w dowolne miejsce na karcie.
+«C4» W głównej nawigacji, używając pseudoelementu ::after, podkreślono link do bieżącej strony (na której obecnie jest użytkownik).
 
-«C5» Filtr (lista przycisków) na stronie Portfolio ma efekt cienia po najechaniu kursorem lub focusie na przyciskach.
+«C5» Niebieska nakładka z tekstem na kartach strony Portfolio pojawia się po najechaniu kursorem w dowolne miejsce na karcie. W każdej karcie jest tekst jak w pierwszym przykładzie.
 
-«C6» Podczas najeżdżania kursorem lub focusie ikony powinny stać się aktywne - zmieniać kolor, jeśli jest to wskazane w układzie.
+«C6» Niebieska nakładka na kartach strony Portfolio wysuwa się z dołu, jak pokazano w wideo.
+card overlay preview
+
+«C7» Pseudoelementy nie mają treści tekstowej we właściwości content. Używane są wyłącznie do celów dekoracyjnych.
+Okno modalne
+
+«D1» Ukończono oznaczanie i dekoracja «backdrop» (ciemnego półprzezroczystego tła) okna modalnego.
+
+«D2» «Backdrop» (tło) wypełnia 100% wysokości i szerokości okna przeglądarki i jest w nim stałe.
+
+«D3» Ukończono oznaczenie znacznikami HTML i dekorację okna modalnego.
+
+«D4» Okno modalne jest umieszczone pionowo i poziomo na środku tła (backdrop).
+
+«D5» Ukończono oznaczenie znacznikami HTML i dekorację przycisku do zamykania okna modalnego w prawym górnym rogu.
+
+«D6» Początkowo okno modalne i backdrop są ukrywane za pomocą klasy is-hidden w backdropie, w selektorze tego elementu używa się właściwości visibility, opacity i pointer-events.
+
+«D7» Jeśli usuniesz klasę is-hidden z backdrop - pojawi się backdrop i okno modalne.
+
+«D8» Pojawienie się i zniknięcie okna modalnego jest animowane przy użyciu przejścia z dowolnym efektem, takim jak scale lub translate, i opacity.
+Otwieranie/zamykanie okna modalnego
+
+Okno modalne z formularzem zgłoszeniowym otwiera się po kliknięciu na przycisk "Zamów usługę". Aby skrypt działał, musisz dodać specjalne atrybuty do znaczników HTML, po których skrypt wyszukuje elementy:
+
+    data-modal-open - do przycisku otwierania okna modalnego.
+    data-modal-close - do przycisku zamykania okna modalnego.
+    data-modal - do backdrop okna modalnego.
+
+Następnie przed zamykającym tagiem body dodaj tag script z linkiem do pliku skryptu okna modalnego. Możesz obejrzeć [instrukcję wideo] (https://drive.google.com/file/d/1XRqb6W_MObwfcp2psCFLUz7of-hc2NhU/view?usp=sharing).
+
+<body>
+  <!-- Wszystkie Twoje znaczniki HTML, w tym znaczniki okna modalnego  -->
+
+  <!-- Umieść przed zamykającym tagiem body -->
+  <script src="./js/modal.js"></script>
+</body>
+
+Skrypt do skopiowania i wklejenia do pliku modal.js.
+
+(() => {
+const refs = {
+openModalBtn: document.querySelector("[data-modal-open]"),
+closeModalBtn: document.querySelector("[data-modal-close]"),
+modal: document.querySelector("[data-modal]"),
+};
+
+refs.openModalBtn.addEventListener("click", toggleModal);
+refs.closeModalBtn.addEventListener("click", toggleModal);
+
+function toggleModal() {
+refs.modal.classList.toggle("is-hidden");
+}
+})();

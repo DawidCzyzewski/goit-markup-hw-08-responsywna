@@ -63,6 +63,7 @@ img {
   padding: 24px 0 25px 0;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  height: 100%;
 }
 
 .nav-links {
@@ -96,11 +97,15 @@ img {
     ),
     url(../images/buttonbackground.jpg);
 }
+
 .company-link:hover .icon-company,
 .company-link:focus .icon-company {
   fill: var(--blue);
   border-color: var(--blue);
   cursor: pointer;
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-text {
   font-size: 44px;
@@ -145,10 +150,22 @@ img {
   margin-bottom: 50px;
 }
 
+.photo-csz {
+  position: relative;
+}
 .photo-csz:not(:last-child) {
   padding-right: 30px;
 }
-
+.figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+}
 .team {
   background-color: var(--grey);
 }
@@ -211,6 +228,9 @@ img {
   background-color: var(--blue);
   fill: var(--white);
   cursor: pointer;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-logos-section {
   display: flex;
@@ -231,6 +251,9 @@ img {
   border: 1px solid var(--blue);
   fill: var(--blue);
   cursor: pointer;
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-company {
@@ -268,13 +291,24 @@ img {
 }
 .bluelink-active {
   color: var(--blue);
+  position: relative;
+  height: 100%;
+}
+.bluelink-active::after {
+  border-bottom: 4px solid var(--blue);
+  position: absolute;
+  content: "";
+  bottom: 0px;
+}
+.bluelink:hover {
+  border-bottom: 4px solid var(--blue);
+  padding-bottom: 50%;
 }
 .header-address {
   color: var(--darkgrey);
   font-style: normal;
   font-size: 14px;
   line-height: 1.14;
-
   text-decoration: none;
   font-weight: 500;
 }
@@ -282,13 +316,19 @@ img {
 .bluelink:focus,
 .header-address:hover,
 .header-address:focus,
+.header-address:hover .icon-address,
+.header-address:focus .icon-address,
 .link:hover,
 .link:focus {
   color: var(--blue);
   text-decoration: none;
   fill: var(--blue);
   cursor: pointer;
+  transition-property: color, fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icon-address {
   margin-right: 10px;
 }
@@ -338,7 +378,27 @@ img {
   padding: 0;
   gap: 30px;
 }
-
+.portfolio-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-element {
+  position: relative;
+}
+.hidden-element-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.hidden-element {
+  position: absolute;
+  background: rgba(33, 150, 243, 0.9);
+  bottom: 50%;
+  width: 301px;
+  font-size: 18px;
+}
 .portfolio-projects-describe {
   border: 1px solid #eeeeee;
   flex-basis: calc((100% - 60px) / 3);
@@ -348,6 +408,9 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -357,9 +420,9 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
+  transition-property: background-color, color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-title {
   font-size: 18px;
