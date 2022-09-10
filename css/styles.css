@@ -569,6 +569,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  fill: var(--black);
 }
 .is-hidden {
   opacity: 0;
