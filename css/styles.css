@@ -565,6 +565,8 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
+  opacity: 100%;
+  transition: opacity 200ms linear, visibility 500ms linear;
 }
 .modal {
   position: absolute;
@@ -575,6 +577,7 @@ img {
   min-height: 581px;
   background-color: var(--white);
 }
+
 .close-button {
   position: absolute;
   top: 8px;
@@ -595,4 +598,6 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: scale(0.1);
+  transition: opacity 200ms linear, visibility 500ms linear;
 }
