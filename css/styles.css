@@ -293,12 +293,17 @@ img {
   color: var(--blue);
   position: relative;
   height: 100%;
+  padding-bottom: 60%;
 }
 .bluelink-active::after {
+  display: block;
   border-bottom: 4px solid var(--blue);
+  border-radius: 4px;
   position: absolute;
   content: "";
+  width: 100%;
   bottom: 0px;
+  left: 0px;
 }
 .bluelink:hover {
   border-bottom: 4px solid var(--blue);
@@ -391,14 +396,53 @@ img {
   width: 100%;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
-.hidden-element {
+.hidden-background {
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
-  bottom: 50%;
-  width: 301px;
+  width: 100%;
+  height: 100%;
+  max-height: 294px;
   font-size: 18px;
+  transform: translateY(300px);
 }
+.hidden-text {
+  justify-content: center;
+  align-items: center;
+  padding: 49px 45px 49px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white);
+}
+
+.portfolio-element:hover .hidden-background,
+.podrtolio-element:focus .hidden-background {
+  transform: translateY(0px);
+  transition-property: transform;
+  transition-duration: 250ms;
+}
+
+/* animation-name: change-visibility;
+  animation-duration: 3s;
+*/
+/* animation-name: change-transform;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-direction: backwards;
+  animation-fill-mode: none;
+}
+
+@keyframes change-transform {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} */
+
 .portfolio-projects-describe {
   border: 1px solid #eeeeee;
   flex-basis: calc((100% - 60px) / 3);
