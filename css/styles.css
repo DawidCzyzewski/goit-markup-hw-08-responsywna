@@ -216,9 +216,9 @@ img {
 }
 
 .socialicon:hover .icon-team,
-.socialicon:focus .icon-team,
+.socialicon:focus-within .icon-team,
 .socialicon:hover,
-.socialicon:focus {
+.socialicon:focus-within {
   background-color: var(--blue);
   fill: var(--white);
   cursor: pointer;
@@ -226,14 +226,12 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .company-link:hover .icon-company,
-.company-link:focus .icon-company {
+.company-link:focus-within .icon-company {
   fill: var(--blue);
   border-color: var(--blue);
   cursor: pointer;
-  transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-logos-section {
   display: flex;
@@ -253,13 +251,10 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-logos:hover,
-.company-logos:focus {
+.company-logos:focus-within {
   border: 1px solid var(--blue);
   fill: var(--blue);
   cursor: pointer;
-  transition-property: border, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-company {
@@ -317,7 +312,8 @@ img {
   bottom: 0px;
   left: 0px;
 }
-.bluelink:hover {
+.bluelink:hover,
+.bluelink:focus-within {
   border-bottom: 4px solid var(--blue);
   padding-bottom: 50%;
 }
@@ -344,9 +340,6 @@ img {
   text-decoration: none;
   fill: var(--blue);
   cursor: pointer;
-  transition-property: color, fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-address {
@@ -408,6 +401,9 @@ img {
 }
 .portfolio-element {
   position: relative;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hidden-element-container {
   display: flex;
@@ -443,25 +439,6 @@ img {
   transition-duration: 250ms;
 }
 
-/* animation-name: change-visibility;
-  animation-duration: 3s;
-*/
-/* animation-name: change-transform;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-  animation-direction: backwards;
-  animation-fill-mode: none;
-}
-
-@keyframes change-transform {
-  0% {
-    transform: translateY(300px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} */
-
 .portfolio-projects-describe {
   border: 1px solid #eeeeee;
   flex-basis: calc((100% - 60px) / 3);
@@ -471,9 +448,6 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -483,9 +457,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  transition-property: background-color, color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-title {
   font-size: 18px;
