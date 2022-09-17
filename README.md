@@ -1,86 +1,36 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
-Projekt
-
-«A1» Wszystkie style są zapisane w jednym pliku styles.css, który znajduje się w folderze css.
-
-«A2» Kod źródłowy jest sformatowany za pomocą Prettier.
-
-«A3» Wszystkie obrazy i zawartość tekstowa są z układu.
-
-«A4» Wszystkie strony HTML mają normalizator stylu modern-normalize.
-
-«A5» Kod jest napisany zgodnie z tutorialem.
-
-«A6» Skrypt do okna modalnego jest zawarty w HTML w oddzielnym pliku modal.js.
 Znaczniki HTML
 
 «B1» Wykonane jest oznaczenie znacznikami HTML wszystkich elementów układu.
 
 «B2» Tagi są używane zgodnie z ich znaczeniem semantycznym.
+
+«B3» Uzupełniono znaczniki formularza zapisu do newslettera i wszystkich jego elementów w stopce.
+
+«B4» Oznaczenie znacznikami HTML formularza wniosku i wszystkich jego elementów w oknie modalnym zostało zakończone.
+
+«B5» Wszystkie dane wejściowe w formularzach mają atrybut name.
+
+«B6» Wartości atrybutu name są opisowe, dokładnie charakteryzujące, po co jest to pole formularza.
+
+«B7» Wszystkie dane wejściowe mają podłączony element <label>.
+
+«B8» Atrybut placeholder jest ustawiany dla danych wejściowych, jeśli ma on w układzie tekst-podpowiedź.
+
+«B9» Przyciski "przesyłania" formularzy mają ustawiony atrybut type="submit".
+
+«B10» Wszystkie nowe ikony z formularzy zostały dodane do sprite'a SVG icons.svg.
 Stylizacja
 
-«C1» Dla wszystkich efektów najechania kursorem i focusu (kolor, tło, cień) wykonywany jest transition. Czas - 250ms, funkcja rozkładu czasu - cubic-bezier(0.4, 0, 0.2, 1).
+«C1» Zakończona jest stylizacja elementów formularza zapisu do newslettera w stopce.
 
-«C2» Właściwości, które będą animowane są wyraźnie określone w przejściach i animacjach. Nigdzie nie ma wartości all.
+«C2» Zakończona jest stylizacja elementów formularza wniosku w oknie modalnym.
 
-«C3» W sekcji Czym się zajmujemy tekst z tłem jest umieszczony nad obrazem.
+«C3» Gdy pole formularza otrzyma focus, jego obramowanie i ikona zmieniają kolor (jak pokazano w układzie).
 
-«C4» W głównej nawigacji, używając pseudoelementu ::after, podkreślono link do bieżącej strony (na której obecnie jest użytkownik).
+«C4» Oryginalne pole wyboru akceptacji regulaminu i polityki w formularzu zgłoszeniowym jest ukryte. Czyli nie jest automatycznie zaznaczone.
 
-«C5» Niebieska nakładka z tekstem na kartach strony Portfolio pojawia się po najechaniu kursorem w dowolne miejsce na karcie. W każdej karcie jest tekst jak w pierwszym przykładzie.
+«C5» Stylizacja „checkboxa” akceptacji umowy licencyjnej została wykonana ręcznie, przy użyciu obrazu wektorowego ptaszka z sprite'a SVG.
 
-«C6» Niebieska nakładka na kartach strony Portfolio wysuwa się z dołu, jak pokazano w wideo.
-card overlay preview
-
-«C7» Pseudoelementy nie mają treści tekstowej we właściwości content. Używane są wyłącznie do celów dekoracyjnych.
-Okno modalne
-
-«D1» Ukończono oznaczanie i dekoracja «backdrop» (ciemnego półprzezroczystego tła) okna modalnego.
-
-«D2» «Backdrop» (tło) wypełnia 100% wysokości i szerokości okna przeglądarki i jest w nim stałe.
-
-«D3» Ukończono oznaczenie znacznikami HTML i dekorację okna modalnego.
-
-«D4» Okno modalne jest umieszczone pionowo i poziomo na środku tła (backdrop).
-
-«D5» Ukończono oznaczenie znacznikami HTML i dekorację przycisku do zamykania okna modalnego w prawym górnym rogu.
-
-«D6» Początkowo okno modalne i backdrop są ukrywane za pomocą klasy is-hidden w backdropie, w selektorze tego elementu używa się właściwości visibility, opacity i pointer-events.
-
-«D7» Jeśli usuniesz klasę is-hidden z backdrop - pojawi się backdrop i okno modalne.
-
-«D8» Pojawienie się i zniknięcie okna modalnego jest animowane przy użyciu przejścia z dowolnym efektem, takim jak scale lub translate, i opacity.
-Otwieranie/zamykanie okna modalnego
-
-Okno modalne z formularzem zgłoszeniowym otwiera się po kliknięciu na przycisk "Zamów usługę". Aby skrypt działał, musisz dodać specjalne atrybuty do znaczników HTML, po których skrypt wyszukuje elementy:
-
-    data-modal-open - do przycisku otwierania okna modalnego.
-    data-modal-close - do przycisku zamykania okna modalnego.
-    data-modal - do backdrop okna modalnego.
-
-Następnie przed zamykającym tagiem body dodaj tag script z linkiem do pliku skryptu okna modalnego. Możesz obejrzeć [instrukcję wideo] (https://drive.google.com/file/d/1XRqb6W_MObwfcp2psCFLUz7of-hc2NhU/view?usp=sharing).
-
-<body>
-  <!-- Wszystkie Twoje znaczniki HTML, w tym znaczniki okna modalnego  -->
-
-  <!-- Umieść przed zamykającym tagiem body -->
-  <script src="./js/modal.js"></script>
-</body>
-
-Skrypt do skopiowania i wklejenia do pliku modal.js.
-
-(() => {
-const refs = {
-openModalBtn: document.querySelector("[data-modal-open]"),
-closeModalBtn: document.querySelector("[data-modal-close]"),
-modal: document.querySelector("[data-modal]"),
-};
-
-refs.openModalBtn.addEventListener("click", toggleModal);
-refs.closeModalBtn.addEventListener("click", toggleModal);
-
-function toggleModal() {
-refs.modal.classList.toggle("is-hidden");
-}
-})();
+«C6» Dla wszystkich efektów najechania i focusu (kolor, tło, cień) wykonywane są przejścia. Czas - 250ms, funkcja rozkładu czasu - cubic-bezier(0.4, 0, 0.2, 1).
