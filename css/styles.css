@@ -677,6 +677,7 @@ img {
 .modal-textarea:hover {
   border-color: var(--blue);
   fill: var(--blue);
+  /* text-decoration: none; */
 }
 .modal-descriptions {
   margin-bottom: 4px;
@@ -718,6 +719,10 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.terms:hover,
+.terms:focus {
+  cursor: pointer;
+}
 .terms-link {
   font-size: 14px;
   line-height: 1.71;
@@ -726,6 +731,7 @@ img {
   margin: 0 4px;
   cursor: pointer;
   text-decoration: underline;
+  color: var(--blue);
 }
 .checkbox {
   display: inline-block;

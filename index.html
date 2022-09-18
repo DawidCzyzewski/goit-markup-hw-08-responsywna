@@ -583,7 +583,7 @@
           <p class="form-header">Zostaw swoje dane w formularzu poniżej</p>
           <div class="modal-container">
             <form name="form-modal">
-              <label class="label-modal"
+              <label class="label-modal" for="username"
                 ><p class="modal-descriptions">Imię</p>
 
                 <svg width="12px" height="12px" class="icon-modal label-name">
@@ -593,10 +593,11 @@
                   type="text"
                   name="username"
                   class="input-modal"
+                  id="username"
                   required
                 />
               </label>
-              <label class="label-modal"
+              <label class="label-modal" for="telephone"
                 ><p class="modal-descriptions">Telefon</p>
 
                 <svg
@@ -610,10 +611,11 @@
                   type="tel"
                   name="telephone"
                   class="input-modal"
+                  id="telephone"
                   required
                 />
               </label>
-              <label class="label-modal"
+              <label class="label-modal" for="email"
                 ><p class="modal-descriptions">Email</p>
 
                 <svg width="15px" height="12px" class="icon-modal label-email">
@@ -623,24 +625,27 @@
                   type="email"
                   name="email"
                   class="input-modal"
+                  id="email"
                   required
                   placeholder=" "
                 />
               </label>
-              <label class="label-modal">
+              <label class="label-modal" for="textarea">
                 <p class="modal-descriptions">Komentarz</p>
                 <textarea
                   name="coment"
                   placeholder="Wprowadź tekst"
                   class="modal-textarea"
+                  id="textarea"
                 ></textarea>
               </label>
-              <label class="label-terms">
+              <label class="label-terms" for="checkbox">
                 <input
                   type="checkbox"
                   name="terms"
                   value="terms-of-use"
                   class="checkbox checkbox-hidden"
+                  id="checkbox"
                   unchecked
                   required
                 />
