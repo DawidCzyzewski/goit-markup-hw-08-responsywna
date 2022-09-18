@@ -47,11 +47,13 @@ img {
   align-items: baseline;
 }
 
-.container-footer {
+.container-footer-address {
   /* width: 100%; */
-  max-width: 1200px;
   /* padding: 60px 15px; */
   margin-right: 70px;
+}
+.container-footer-join {
+  margin-right: 78px;
 }
 .section {
   padding: 94px 0;
@@ -270,6 +272,7 @@ img {
 }
 
 .newsletter {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -277,7 +280,6 @@ img {
 }
 
 .newsletter-description {
-  padding-bottom: 20px;
   color: var(--white);
   font-weight: 700;
   font-size: 14px;

@@ -470,7 +470,7 @@
     </main>
     <footer class="footer">
       <div class="container flex-row left">
-        <div class="container-footer">
+        <div class="container-footer-address">
           <a href="./index.html" class="logo whitelogo"
             ><span class="bluelogo">Web</span>Studio</a
           >
@@ -488,7 +488,7 @@
             </ul>
           </address>
         </div>
-        <div class="container-footer">
+        <div class="container-footer-join">
           <h3 class="header3">Dołącz do nas</h3>
           <div class="socialmedia-footer">
             <ul class="socialicon-footer">
@@ -535,27 +535,38 @@
             </ul>
           </div>
         </div>
-        <div class="container-footer" autocomplete="on">
+        <div class="container-footer-newsletter">
           <div class="newsletter-container">
             <form name="newsletter">
-              <label for="email" name="email" class="newsletter">
-                <span class="newsletter-description"
-                  >Zapisz się do newslettera</span
-                >
-                <input
-                  type="email"
+              <span class="newsletter-description"
+                >Zapisz się do newslettera</span
+              >
+              <div class="flex-row">
+                <label
+                  for="email"
                   name="email"
-                  class="newsletter-input"
-                  placeholder="E-mail"
-                />
-              </label>
+                  class="newsletter"
+                  autocomplete="on"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    class="newsletter-input"
+                    placeholder="E-mail"
+                  />
+                </label>
+                <button type="submit" class="button-active subscribe">
+                  Zapisz się
+                  <svg
+                    class="icon-footer subscribe-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
             </form>
-            <button type="submit" class="button-active subscribe">
-              Zapisz się
-              <svg class="icon-footer subscribe-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </div>
