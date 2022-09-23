@@ -108,13 +108,13 @@ img {
   color: var(--white);
   width: 700px;
 }
-.index-lorem {
+.index-specialities {
   padding-bottom: 94px;
 }
-.index-lorem li:not(:last-child) {
+.index-specialities li:not(:last-child) {
   padding-right: 30px;
 }
-.index-lorem__icon {
+.index-specialities__icon {
   width: 270px;
   height: 120px;
   display: flex;
@@ -124,14 +124,14 @@ img {
   background: #f5f4fa;
   border-radius: 4px;
 }
-.index-lorem__heading {
+.index-specialities__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: left;
   padding-bottom: 10px;
 }
-.index-lorem__paragraph {
+.index-specialities__paragraph {
   color: var(--darkgrey);
   font-size: 14px;
   line-height: 1.71;
@@ -298,7 +298,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .newsletter-container__subscribe-button {
-  height: 50px;
   margin-left: 12px;
   display: flex;
   align-items: center;
@@ -401,9 +400,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.index-background__button {
-  height: 50px;
-}
+
 .button-active {
   background-color: var(--blue);
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
@@ -413,6 +410,7 @@ img {
   font-size: 16px;
   line-height: 1.88;
   width: 200px;
+  height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
