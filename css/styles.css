@@ -401,32 +401,21 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-active {
+.button--active {
   background-color: var(--blue);
-  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   color: var(--white);
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button--functional {
   line-height: 1.88;
   width: 200px;
   height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   border: 0px;
-}
-.button-active-portfolio {
-  background-color: var(--blue);
-  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
-  color: var(--white);
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  outline-color: var(--blue);
+  font-weight: 700;
 }
+
 .portfolio-grid {
   display: flex;
   flex-direction: row;
@@ -496,10 +485,6 @@ img {
 .button:focus {
   background-color: var(--blue);
   color: var(--white);
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .portfolio-grid__project-title {
@@ -590,7 +575,7 @@ img {
   background-color: var(--white);
 }
 
-.close-button {
+.button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -754,8 +739,6 @@ img {
   border: none;
 }
 .form-button {
-  width: 200px;
-  height: 50px;
   margin: 30px 25%;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   outline-color: var(--blue);
