@@ -414,6 +414,7 @@ img {
   border: 0px;
   border-radius: 4px;
   font-weight: 700;
+  outline-color: var(--blue);
 }
 
 .portfolio-grid {
@@ -740,6 +741,4 @@ img {
 }
 .form-button {
   margin: 30px 25%;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-  outline-color: var(--blue);
 }
