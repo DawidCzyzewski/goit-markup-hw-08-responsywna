@@ -1,0 +1,18 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin mainHoverColor {
+  color: var(--blue);
+  text-decoration: none;
+  fill: var(--blue);
+  cursor: pointer;
+}
+@mixin modalHoverColor {
+  border-color: var(--blue);
+  fill: var(--blue);
+  /* text-decoration: none; */
+  outline-color: var(--blue);
+}

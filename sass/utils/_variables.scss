@@ -1,0 +1,36 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #2196f3;
+  --dark: #212121;
+  --darkfooter: #2f303a;
+  --grey: #f5f4fa;
+  --darkgrey: #757575;
+  --whitetrans: #ffffff99;
+}
+body {
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+  font-style: normal;
+  color: var(--dark);
+  align-items: center;
+}
+.relative {
+  position: relative;
+}
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row {
+  flex-direction: row;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}

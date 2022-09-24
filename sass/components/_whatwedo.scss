@@ -1,0 +1,15 @@
+.photo-whatwedo {
+  &:not(:last-child) {
+    padding-right: 30px;
+  }
+  &__figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+  }
+}
