@@ -12,16 +12,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__logos:hover,
-  __logos:focus-within {
-    border: 1px solid var(--blue);
-    fill: var(--blue);
-    cursor: pointer;
-  }
+  &__logos:focus-within,
   &:hover .company-link__icon,
   &:focus-within .company-link__icon {
-    fill: var(--blue);
-    border-color: var(--blue);
-    cursor: pointer;
+    @include modalHoverColor;
   }
   &__icon {
     fill: #afb1b8;

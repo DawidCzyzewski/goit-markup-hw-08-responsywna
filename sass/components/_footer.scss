@@ -21,6 +21,7 @@
   /* width: 100%; */
   /* padding: 60px 15px; */
   margin-right: 70px;
+  padding-top: 20px;
   &__link {
     text-decoration: none;
     color: var(--whitetrans);
@@ -30,9 +31,7 @@
     @include mainHoverColor;
   }
 }
-.footer-container-address {
-  padding-top: 20px;
-}
+
 .footer-join {
   margin-right: 78px;
   &__heading {
