@@ -14,13 +14,12 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
       cursor: pointer;
-    }
-
-    &:hover .portfolio-grid__hidden-background,
-    &:focus .portfolio-grid__hidden-background {
-      transform: translateY(0px);
-      transition-property: transform;
-      transition-duration: 250ms;
+      .portfolio-grid__hidden-background,
+      .portfolio-grid__hidden-background {
+        transform: translateY(0px);
+        transition-property: transform;
+        transition-duration: 250ms;
+      }
     }
   }
   &__hidden-element-container {

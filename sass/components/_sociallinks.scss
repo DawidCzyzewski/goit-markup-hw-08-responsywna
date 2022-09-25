@@ -1,4 +1,4 @@
-.socialicon {
+.social-icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -9,11 +9,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-  &:focus-within,
-  &:hover .team-section__icon,
-  &:focus-within .team-section__icon {
-    background-color: var(--blue);
-    fill: var(--white);
-    cursor: pointer;
+  &:focus-within {
+    .team-section__icon,
+    .team-section__icon {
+      background-color: var(--blue);
+      fill: var(--white);
+      cursor: pointer;
+    }
   }
 }

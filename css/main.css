@@ -96,7 +96,9 @@ li {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
-.portfolio-grid__element:hover .portfolio-grid__hidden-background, .portfolio-grid__element:focus .portfolio-grid__hidden-background {
+.portfolio-grid__element:hover .portfolio-grid__hidden-background,
+.portfolio-grid__element:hover .portfolio-grid__hidden-background, .portfolio-grid__element:focus .portfolio-grid__hidden-background,
+.portfolio-grid__element:focus .portfolio-grid__hidden-background {
   transform: translateY(0px);
   transition-property: transform;
   transition-duration: 250ms;
@@ -384,10 +386,10 @@ li {
   line-height: 1.18;
   padding-bottom: 30px;
 }
-.team-section__socialicon-list {
+.team-section__social-icon-list {
   margin: 0 32px;
 }
-.team-section__socialicon-card {
+.team-section__social-icon-card {
   padding-bottom: 30px;
 }
 .team-section__icon {
@@ -397,7 +399,7 @@ li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socialicon {
+.social-icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -408,7 +410,9 @@ li {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socialicon:hover, .socialicon:focus-within, .socialicon:hover .team-section__icon, .socialicon:focus-within .team-section__icon {
+.social-icon:hover .team-section__icon,
+.social-icon:hover .team-section__icon, .social-icon:focus-within .team-section__icon,
+.social-icon:focus-within .team-section__icon {
   background-color: var(--blue);
   fill: var(--white);
   cursor: pointer;
@@ -433,7 +437,7 @@ li {
   outline-color: var(--blue);
   cursor: pointer;
 }
-.company-link:hover .company-link__icon, .company-link:focus-within .company-link__icon {
+.company-link__logos:hover .company-link__icon, .company-link__logos:focus-within .company-link__icon {
   border-color: var(--blue);
   fill: var(--blue);
   /* text-decoration: none; */
