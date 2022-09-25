@@ -13,7 +13,6 @@
 @mixin modalHoverColor {
   border-color: var(--blue);
   fill: var(--blue);
-  /* text-decoration: none; */
   outline-color: var(--blue);
   cursor: pointer;
 }

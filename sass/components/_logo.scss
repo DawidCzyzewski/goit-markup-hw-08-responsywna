@@ -6,9 +6,11 @@
   line-height: 1.19;
   font-size: 26px;
   &--color {
+    @extend .logo;
     color: var(--blue);
   }
   &--footer {
+    @extend .logo;
     color: var(--white);
   }
 }

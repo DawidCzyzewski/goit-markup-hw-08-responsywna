@@ -155,10 +155,13 @@
 .form-input:not(:placeholder-shown):required:invalid {
   border-color: red;
 }
-.modal-textarea:focus-within,
-.modal-textarea:hover {
-  @include modalHoverColor;
+.modal-textarea {
+  &:focus-within,
+  &:hover {
+    @include modalHoverColor;
+  }
 }
+
 .checkbox {
   display: inline-block;
   background-repeat: no-repeat;

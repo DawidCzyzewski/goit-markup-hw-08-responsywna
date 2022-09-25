@@ -146,7 +146,7 @@ li {
   gap: 4px;
 }
 
-.logo {
+.logo, .logo--footer, .logo--color {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-decoration: none;
@@ -161,7 +161,7 @@ li {
   color: var(--white);
 }
 
-.button {
+.button, .button--functional, .button--active {
   background-color: var(--grey);
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-size: 16px;
@@ -190,7 +190,7 @@ li {
   color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.button:hover, .button:focus {
+.button:hover, .button--active:hover, .button--functional:hover, .button:focus, .button--active:focus, .button--functional:focus {
   background-color: var(--blue);
   color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -433,14 +433,12 @@ li {
 .company-link__logos:hover, .company-link__logos:focus-within {
   border-color: var(--blue);
   fill: var(--blue);
-  /* text-decoration: none; */
   outline-color: var(--blue);
   cursor: pointer;
 }
 .company-link__logos:hover .company-link__icon, .company-link__logos:focus-within .company-link__icon {
   border-color: var(--blue);
   fill: var(--blue);
-  /* text-decoration: none; */
   outline-color: var(--blue);
   cursor: pointer;
 }
@@ -649,7 +647,6 @@ li {
 .form-modal__label:hover, .form-modal__label:focus-within {
   border-color: var(--blue);
   fill: var(--blue);
-  /* text-decoration: none; */
   outline-color: var(--blue);
   cursor: pointer;
 }
@@ -668,7 +665,6 @@ li {
 .form-modal__input:hover, .form-modal__input:focus-within {
   border-color: var(--blue);
   fill: var(--blue);
-  /* text-decoration: none; */
   outline-color: var(--blue);
   cursor: pointer;
 }
@@ -743,11 +739,9 @@ li {
   border-color: red;
 }
 
-.modal-textarea:focus-within,
-.modal-textarea:hover {
+.modal-textarea:focus-within, .modal-textarea:hover {
   border-color: var(--blue);
   fill: var(--blue);
-  /* text-decoration: none; */
   outline-color: var(--blue);
   cursor: pointer;
 }
