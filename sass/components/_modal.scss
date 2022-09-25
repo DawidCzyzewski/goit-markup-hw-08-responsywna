@@ -71,6 +71,10 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus-within {
+      @include modalHoverColor;
+    }
   }
   &__input {
     width: 100%;
@@ -83,18 +87,22 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus-within {
+      @include modalHoverColor;
+    }
   }
   &__descriptions {
     margin-bottom: 4px;
   }
   &__name {
-    top: 115px;
+    top: 112px;
   }
   &__telephone {
-    top: 178px;
+    top: 177px;
   }
   &__email {
-    top: 244px;
+    top: 241px;
   }
   &__icon {
     position: absolute;
@@ -142,12 +150,6 @@
     &:focus {
       cursor: pointer;
     }
-  }
-  &__label:hover,
-  &__label:focus-within,
-  &__input:hover,
-  &__input:focus-within {
-    @include modalHoverColor;
   }
 }
 .form-input:not(:placeholder-shown):required:invalid {

@@ -14,46 +14,46 @@
     gap: 50px;
     padding-left: 93px;
   }
-  &__link,
-  &__link--active {
+  &__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
-  }
-  &__link {
     color: var(--dark);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__link--active {
-    color: var(--blue);
-    position: relative;
-    height: 100%;
-    padding-bottom: 60%;
-  }
-  &__link:visited {
-    color: var(--dark);
-  }
-  &__link--active::after {
-    display: block;
-    border-bottom: 4px solid var(--blue);
-    border-radius: 4px;
-    position: absolute;
-    content: "";
-    width: 100%;
-    bottom: 0px;
-    left: 0px;
-  }
-  &__link:hover,
-  &__link:focus-within {
-    border-bottom: 4px solid var(--blue);
-    padding-bottom: 50%;
-    @include mainHoverColor;
+    &-active {
+      color: var(--blue);
+      position: relative;
+      padding-bottom: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      &::after {
+        display: block;
+        border-bottom: 4px solid var(--blue);
+        border-radius: 4px;
+        position: absolute;
+        content: "";
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+      }
+    }
+    &:visited {
+      color: var(--dark);
+    }
+    &:hover,
+    &:focus-within {
+      border-bottom: 4px solid var(--blue);
+      padding-bottom: 26px;
+      border-radius: 4px;
+      @include mainHoverColor;
+    }
   }
 }
-
 .header-contact {
   margin-left: auto;
   &__link {
@@ -67,10 +67,11 @@
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__link:hover,
-  &__link:focus {
-    @include mainHoverColor;
+
+    &:hover,
+    &:focus {
+      @include mainHoverColor;
+    }
   }
   &__icon {
     margin-right: 10px;

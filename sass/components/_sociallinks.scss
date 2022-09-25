@@ -15,8 +15,5 @@
     background-color: var(--blue);
     fill: var(--white);
     cursor: pointer;
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

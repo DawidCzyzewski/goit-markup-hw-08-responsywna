@@ -10,9 +10,12 @@
     transition-property: border, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus-within {
+      @include modalHoverColor;
+    }
   }
-  &__logos:hover,
-  &__logos:focus-within,
   &:hover .company-link__icon,
   &:focus-within .company-link__icon {
     @include modalHoverColor;

@@ -25,10 +25,11 @@
   &__link {
     text-decoration: none;
     color: var(--whitetrans);
-  }
-  &__link:hover,
-  &__link:focus {
-    @include mainHoverColor;
+
+    &:hover,
+    &:focus {
+      @include mainHoverColor;
+    }
   }
 }
 
