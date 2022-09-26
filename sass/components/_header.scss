@@ -19,12 +19,12 @@
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
-    color: var(--dark);
+    color: getColor("main-text");
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &-active {
-      color: var(--blue);
+      color: getColor("main-color");
       position: relative;
       padding-bottom: 30px;
       text-decoration: none;
@@ -33,7 +33,7 @@
       line-height: 1.14;
       &::after {
         display: block;
-        border-bottom: 4px solid var(--blue);
+        border-bottom: 4px solid getColor("main-color");
         border-radius: 4px;
         position: absolute;
         content: "";
@@ -43,11 +43,11 @@
       }
     }
     &:visited {
-      color: var(--dark);
+      color: getColor("main-text");
     }
     &:hover,
     &:focus-within {
-      border-bottom: 4px solid var(--blue);
+      border-bottom: 4px solid getColor("main-color");
       padding-bottom: 26px;
       border-radius: 4px;
       @include mainHoverColor;
@@ -58,7 +58,7 @@
   margin-left: auto;
   &__link {
     padding-right: 50px;
-    color: var(--darkgrey);
+    color: getColor("secondary-text");
     font-style: normal;
     font-size: 14px;
     line-height: 1.14;

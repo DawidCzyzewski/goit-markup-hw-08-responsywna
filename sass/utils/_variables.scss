@@ -11,7 +11,7 @@
 body {
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-style: normal;
-  color: var(--dark);
+  color: getColor("main-text");
   align-items: center;
 }
 .relative {

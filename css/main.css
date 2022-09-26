@@ -12,7 +12,7 @@
 body {
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-style: normal;
-  color: var(--dark);
+  color: getColor("main-text");
   align-items: center;
 }
 
@@ -410,9 +410,7 @@ li {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-icon:hover .team-section__icon,
-.social-icon:hover .team-section__icon, .social-icon:focus-within .team-section__icon,
-.social-icon:focus-within .team-section__icon {
+.social-icon:hover, .social-icon:focus-within, .social-icon:hover .team-section__icon, .social-icon:focus-within .team-section__icon {
   background-color: var(--blue);
   fill: var(--white);
   cursor: pointer;

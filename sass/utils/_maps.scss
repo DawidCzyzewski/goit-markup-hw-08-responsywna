@@ -1,0 +1,15 @@
+$colors: (
+  "main-color": var(--blue),
+  "main-text": var(--dark),
+  "secondary-text": var(--darkgrey),
+  "buttons&team-background": var(--grey),
+  "footer-background": var(--darkfooter),
+  "footer-links": var(--whitetrans),
+  "icon-footer-background": rgba(255, 255, 255, 0.1),
+  "companies&icons": #afb1b8,
+);
+
+// Tu naywamy funkcję jako "getColor" i nadajemy atrybut co ona ma robić $key. Ma wejść wziąć z mapy o nawie $colors $key klucz
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

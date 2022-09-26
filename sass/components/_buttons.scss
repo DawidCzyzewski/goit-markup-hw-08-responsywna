@@ -1,5 +1,5 @@
 .button {
-  background-color: var(--grey);
+  background-color: getColor("buttons&team-background");
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 1.62;
@@ -13,7 +13,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &--active {
     @extend .button;
-    background-color: var(--blue);
+    background-color: getColor("main-color");
     color: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
@@ -23,14 +23,14 @@
     width: 200px;
     height: 50px;
     font-weight: 700;
-    outline-color: var(--blue);
-    background-color: var(--blue);
+    outline-color: getColor("main-color");
+    background-color: getColor("main-color");
     color: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   &:hover,
   &:focus {
-    background-color: var(--blue);
+    background-color: getColor("main-color");
     color: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }

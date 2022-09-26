@@ -1,18 +1,18 @@
-@mixin flexCenter($direction) {
+@mixin flexCenter($direction: row) {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: $direction;
 }
 @mixin mainHoverColor {
-  color: var(--blue);
+  color: getColor("main-color");
   text-decoration: none;
-  fill: var(--blue);
+  fill: getColor("main-color");
   cursor: pointer;
 }
 @mixin modalHoverColor {
-  border-color: var(--blue);
-  fill: var(--blue);
-  outline-color: var(--blue);
+  border-color: getColor("main-color");
+  fill: getColor("main-color");
+  outline-color: getColor("main-color");
   cursor: pointer;
 }

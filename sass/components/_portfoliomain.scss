@@ -54,7 +54,7 @@
     padding: 20px 24px 4px;
   }
   &__project-type {
-    color: var(--darkgrey);
+    color: getColor("secondary-text");
     padding: 0 24px 20px;
   }
   &__projects-describe {
