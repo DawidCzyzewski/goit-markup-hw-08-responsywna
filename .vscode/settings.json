@@ -16,5 +16,6 @@
   // ,
   // "liveSassCompile.settings.excludeList": ["**/node_modules/**"],
   // "liveSassCompile.settings.generateMap": true,
+  // To poniżej sprawdza prefixy do jakich przeglądarek dodać, czyli tych, które są używane przez więcej niż 1% ludzi i ostatnie ich dwie wersje
   // "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
 }
