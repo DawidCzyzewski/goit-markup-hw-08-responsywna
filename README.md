@@ -1,33 +1,32 @@
-Projekt
+«A1» Stosowana jest metodologia BEM.
 
-«A1» Refaktoryzacja kodu HTML projektu z wykorzystaniem metodologii BEM.
+«A2» Używany jest preprocesor SASS.
 
-«A2» Refaktoryzacja kodu CSS projektu przy użyciu preprocesora SASS.
+«A3» Pliki index.html i portfolio.html zawierają zminimalizowany plik stylów main.min.css z folderu css.
 
-«A3» Folder sass, został utworzony w katalogu głównym projektu, który zawiera wszystkie pliki stylów preprocesora.
+«A4» Podczas przeglądania strony na dowolnym urządzeniu o szerokości 320px i więcej, poziomy pasek przewijania nie pojawia się.
 
-«A4» W folderze sass znajduje się plik main.scss - główny plik, do którego wszystkie fragmenty SASS (partials, pliki _nazwa.scss) są importowane.
+«A5» Skrypt menu mobilnego jest zawarty w HTML w osobnym pliku mobile-menu.js.
+Skrypt menu mobilnego
 
-«A5» Paleta kolorów układu i zestawy czcionek są przenoszone do zmiennych w pliku variables.scss, który znajduje się w folderze sass/utils. Możesz użyć zmiennych CSS lub SASS (opcjonalnie).
-
-«A6» Dla każdego komponentu tworzony jest oddzielny fragmentu pliku stylów w folderze sass/components. Na przykład _page-header.scss, _logo.scss itd.
-
-«A7» Pliki index.html i portfolio.html zawierają zminimalizowany plik stylów main.min.css z folderu css.
+Pełny przykład tworzenia mobilnego menu z gotowym już skryptem omówiony jest pod tym linkiem.
 Znaczniki HTML
 
-«B1» Poprawne nazewnictwo klas bloków zgodnie z metodologią BEM.
+«B1» Wszystkie strony w bloku <head> mają metatag viewport.
 
-«B2» Poprawne nazewnictwo klas elementów zgodnie z metodologią BEM.
+«B2» Wszystkie bitmapy tła i treści są responsywne i obsługują gęstości x1 i x2.
 
-«B3» Poprawne nazewnictwo klas modyfikatorów zgodnie z metodologią BEM.
+«B3» W przypadku responsywnych obrazów tła używane są funkcje multimedialne min-device-pixel-ratio i min-resolution.
 
-«B4» Poprawne nazewnictwo klas domieszek zgodnie z metodologią BEM.
-
-«B5» Nazwy klas zgodnie z metodologią BEM są zrozumiałe i opisowe, w języku angielskim.
+«B4» Oznaczanie menu mobilnego znacznikami HTML zostało zakończone.
 Stylizacja
 
-«C1» Stosowane jest zagnieżdżanie selektorów.
+«C1» Podczas pisania stylów zastosowano podejście Mobile First i funkcja multimedialna (min-width: ).
 
-«C2» Maksymalne zagnieżdżenie selektorów to 2 poziomy.
+«C2» Style są potrzebne tylko w określonym zakresie, zamknięte w zapytaniach o media (min-width: ) and (max-width: ) lub tylko (max-width: ).
 
-«C3» Operator konkatenacji (&) jest używany do opisywania pseudoklas i pseudoelementów.
+«C3» Nie ma niepotrzebnego powielania stylów w zapytaniach o media.
+
+«C4» Układ jest wykonany z uwzględnieniem trzech punktów przerwania: 480px, 768px i 1200px.
+
+«C5» Projektowanie menu mobilnego zostało ukończone.
