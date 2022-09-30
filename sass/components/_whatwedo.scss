@@ -13,3 +13,8 @@
     color: rgba(255, 255, 255, 1);
   }
 }
+@media screen and (max-width: 1200px) {
+  .what-we-do {
+    display: none;
+  }
+}

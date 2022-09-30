@@ -1,3 +1,50 @@
+// .team-background {
+//   background-color: getColor("buttons&team-background");
+// }
+// .team-figure {
+//   margin: 0;
+// }
+// .team-section {
+//   display: flex;
+//   direction: row;
+//   gap: 30px;
+//   &__card {
+//     background-color: var(--white);
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//   }
+//   &__describe {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   &__name {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.18;
+//     padding: 30px 0 10px;
+//   }
+//   &__position {
+//     color: getColor("secondary-text");
+//     font-size: 16px;
+//     line-height: 1.18;
+//     padding-bottom: 30px;
+//   }
+//   &__social-icon-list {
+//     margin: 0 32px;
+//   }
+//   &__social-icon-card {
+//     padding-bottom: 30px;
+//   }
+//   &__icon {
+//     fill: getColor("companies&icons");
+//     transition-property: background-color, fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+
 .team-background {
   background-color: getColor("buttons&team-background");
 }
@@ -5,9 +52,10 @@
   margin: 0;
 }
 .team-section {
-  display: flex;
-  direction: row;
-  gap: 30px;
+  row-gap: 30px;
+  width: 450px;
+  @include flexCenter(column);
+
   &__card {
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

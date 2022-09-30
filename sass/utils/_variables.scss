@@ -13,6 +13,7 @@ body {
   font-style: normal;
   color: getColor("main-text");
   align-items: center;
+  min-width: 320px;
 }
 .relative {
   position: relative;
@@ -27,4 +28,10 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

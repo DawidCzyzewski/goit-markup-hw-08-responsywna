@@ -20,8 +20,8 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="container flex-row">
+    <header class="page-header section">
+      <div class="container--width flex-row">
         <a href="./index.html" class="logo"
           ><span class="logo--color">Web</span>Studio</a
         >
@@ -54,6 +54,16 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="header-menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24px" height="16px">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -133,7 +143,10 @@
               </p>
             </li>
           </ul>
-
+        </div>
+      </section>
+      <section class="section what-we-do">
+        <div class="container">
           <h2 class="section__heading">Czym się zajmujemy</h2>
 
           <ul>
@@ -177,9 +190,9 @@
           <ul class="team-section">
             <li class="team-section__card">
               <img
-                src="./images/productdesigner.jpg"
-                width="270"
-                height="260"
+                src="./images/productdesigner1x.jpg"
+                width="450"
+                height="460"
                 alt="Zdjęcie pana John Doe"
               />
               <ul class="team-section__describe">
@@ -234,9 +247,9 @@
 
             <li class="team-section__card">
               <img
-                src="images/frontenddev.jpg"
-                width="270"
-                height="260"
+                src="images/frontenddev1x.jpg"
+                width="450"
+                height="460"
                 alt="Zdjęcie pani John Doe"
               />
               <ul class="team-section__describe">
@@ -245,7 +258,7 @@
               </ul>
               <div>
                 <ul class="team-section__social-icon-list flex-space-around">
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -255,18 +268,17 @@
                       ></a>
                     </div>
                   </li>
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
                           <use
                             href="./images/symbol-defs.svg#icon-twitter"
-                          ></use>
-                        </svg>
-                      </a>
+                          ></use></svg
+                      ></a>
                     </div>
                   </li>
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -276,7 +288,7 @@
                       ></a>
                     </div>
                   </li>
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -292,9 +304,9 @@
 
             <li class="team-section__card">
               <img
-                src="images/marketing.jpg"
-                width="270"
-                height="260"
+                src="images/marketing1x.jpg"
+                width="450"
+                height="460"
                 alt="Zdjęcie pana John Doe"
               />
               <ul class="team-section__describe">
@@ -303,7 +315,7 @@
               </ul>
               <div>
                 <ul class="team-section__social-icon-list flex-space-around">
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -313,7 +325,7 @@
                       ></a>
                     </div>
                   </li>
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -323,7 +335,7 @@
                       ></a>
                     </div>
                   </li>
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -333,7 +345,7 @@
                       ></a>
                     </div>
                   </li>
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -349,9 +361,9 @@
 
             <li class="team-section__card">
               <img
-                src="images/uidesigner.jpg"
-                width="270"
-                height="260"
+                src="images/uidesigner1x.jpg"
+                width="450"
+                height="460"
                 alt="Zdjęcie pana John Doe"
               />
               <ul class="team-section__describe">
@@ -360,7 +372,7 @@
               </ul>
               <div>
                 <ul class="team-section__social-icon-list flex-space-around">
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -370,7 +382,7 @@
                       ></a>
                     </div>
                   </li>
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -380,7 +392,7 @@
                       ></a>
                     </div>
                   </li>
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -390,7 +402,7 @@
                       ></a>
                     </div>
                   </li>
-                  <li>
+                  <li class="team-section__social-icon-card">
                     <div class="social-icon">
                       <a href="index.html">
                         <svg class="team-section__icon" width="20" height="20">
@@ -409,7 +421,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section__heading">Nasi klienci</h2>
-          <ul class="flex-space-around">
+          <ul class="company-mobile">
             <li class="company-link">
               <div class="company-link__logos">
                 <a href="index.html">
@@ -483,7 +495,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container flex-row left">
+      <div class="container flex-center">
         <div class="footer-container">
           <a href="./index.html" class="logo--footer"
             ><span class="logo--color">Web</span>Studio</a
@@ -553,11 +565,11 @@
         </div>
 
         <div class="newsletter-container">
-          <form name="newsletter">
+          <form name="newsletter-container__form">
             <span class="newsletter-container__description"
               >Zapisz się do newslettera</span
             >
-            <div class="flex-row">
+            <div class="flex-center">
               <label
                 for="email"
                 name="email"
@@ -696,6 +708,83 @@
         </div>
       </div>
     </div>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__btn js-close-menu">
+        <svg width="19" height="19">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div>
+        <ul class="mobile-menu__menu">
+          <li>
+            <a
+              href="./index.html"
+              class="mobile-menu__link mobile-menu__link--active"
+              >Agencja</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li><a href="#address" class="mobile-menu__link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mobile-menu__contacts">
+          <li>
+            <a href="tel:+48111111111" class="mobile-menu__contact-item"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__contact-item mobile-menu__contact-item--grey"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

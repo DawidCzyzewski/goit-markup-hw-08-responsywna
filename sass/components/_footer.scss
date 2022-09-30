@@ -1,12 +1,74 @@
+// .footer {
+//   background-color: getColor("footer-background");
+//   display: flex;
+//   justify-content: left;
+//   flex-direction: row;
+//   align-items: center;
+//   padding: 60px 0;
+//   height: 603px;
+//   &__address,
+//   &__address p {
+//     margin-top: 20px;
+//     min-width: 246px;
+//     text-decoration: none;
+//     font-style: normal;
+//     color: var(--white);
+//     font-size: 14px;
+//     line-height: 1.71;
+//   }
+// }
+
+// .footer-container {
+//   // width: 100%;
+//   // padding: 60px 15px;
+//   margin-right: 70px;
+//   padding-top: 20px;
+//   &__link {
+//     text-decoration: none;
+//     color: getColor("footer-links");
+//     &:hover,
+//     &:focus {
+//       @include mainHoverColor;
+//     }
+//   }
+// }
+
+// .footer-join {
+//   margin-right: 78px;
+//   &__heading {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: #ffffff;
+//   }
+//   &__socialmedia {
+//     display: flex;
+//     justify-content: left;
+//     margin-right: 10px;
+//   }
+// }
+// .footer-contact {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .icon-footer {
+//   fill: var(--white);
+// }
+// .circle-background {
+//   background-color: getColor("icon-footer-background");
+//   margin-right: 10px;
+//   margin-top: 20px;
+// }
 .footer {
   background-color: getColor("footer-background");
-  display: flex;
-  justify-content: left;
-  flex-direction: row;
-  align-items: center;
   padding: 60px 0;
   &__address,
   &__address p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     min-width: 246px;
     text-decoration: none;
@@ -18,10 +80,13 @@
 }
 
 .footer-container {
-  /* width: 100%; */
-  /* padding: 60px 15px; */
-  margin-right: 70px;
+  // width: 100%;
+  // padding: 60px 15px;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   &__link {
     text-decoration: none;
     color: getColor("footer-links");
@@ -33,7 +98,11 @@
 }
 
 .footer-join {
-  margin-right: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px auto;
+  justify-content: space-around;
   &__heading {
     font-weight: 700;
     font-size: 14px;

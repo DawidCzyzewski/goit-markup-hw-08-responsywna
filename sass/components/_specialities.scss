@@ -1,10 +1,39 @@
+// .index-specialities {
+//   padding-bottom: 94px;
+//   & li:not(:last-child) {
+//     padding-right: 30px;
+//   }
+//   &__icon {
+//     width: 270px;
+//     height: 120px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 28px;
+//     background: #f5f4fa;
+//     border-radius: 4px;
+//   }
+//   &__heading {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-align: left;
+//     padding-bottom: 10px;
+//   }
+//   &__paragraph {
+//     color: getColor("secondary-text");
+//     font-size: 14px;
+//     line-height: 1.71;
+//   }
+// }
 .index-specialities {
-  padding-bottom: 94px;
+  @include flexCenter(column);
+  padding-bottom: 60px;
   & li:not(:last-child) {
-    padding-right: 30px;
+    padding-bottom: 30px;
   }
   &__icon {
-    width: 270px;
+    width: 450px;
     height: 120px;
     display: flex;
     justify-content: center;
@@ -17,7 +46,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: left;
+    text-align: center;
     padding-bottom: 10px;
   }
   &__paragraph {

@@ -1,0 +1,107 @@
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--white);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    fill: var(--black);
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      fill: getColor("main-color");
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: getColor("main-text");
+
+    &:hover,
+    &:focus,
+    &--active {
+      color: getColor("main-color");
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__contact-item {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: getColor("main-color");
+
+    &--grey {
+      color: getColor("secondary-text");
+      font-size: 24px;
+      line-height: 1.17;
+      margin-top: 32px;
+    }
+  }
+  &__social-list {
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: getColor("main-color");
+  }
+
+  &__social-item {
+    &:not(:last-child)::after {
+      content: "";
+      margin-left: 10px;
+      width: 22px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      background-color: rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
+  }
+}

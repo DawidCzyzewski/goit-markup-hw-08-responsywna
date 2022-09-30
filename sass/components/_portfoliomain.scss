@@ -9,6 +9,7 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    width: 450px;
     &:hover,
     &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -63,5 +64,35 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+  }
+}
+
+.buttons-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 0 15px;
+  margin-bottom: 40px;
+  &__item {
+    &:nth-of-type(1) .button--active {
+      width: 103px;
+    }
+
+    &:nth-of-type(2) .button {
+      width: 128px;
+    }
+
+    &:nth-of-type(3) .button {
+      width: 145px;
+    }
+
+    &:nth-of-type(4) .button {
+      width: 103px;
+    }
+
+    &:nth-of-type(5) .button {
+      width: 130px;
+    }
   }
 }

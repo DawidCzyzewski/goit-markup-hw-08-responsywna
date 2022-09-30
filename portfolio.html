@@ -20,20 +20,18 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="container flex-row">
+    <header class="page-header section">
+      <div class="container--width flex-row">
         <a href="./index.html" class="logo"
           ><span class="logo--color">Web</span>Studio</a
         >
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li>
-              <a href="./index.html" class="header-nav__link">Agencja</a>
+              <a href="./index.html" class="header-nav__link-active">Agencja</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="header-nav__link-active"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="header-nav__link">Portfolio</a>
             </li>
             <li>
               <a href="#address" class="header-nav__link">Kontakt</a>
@@ -56,29 +54,46 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="header-menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24px" height="16px">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section class="section">
         <div class="container">
           <ul class="buttons-portfolio">
-            <li>
+            <li class="buttons-portfolio__item">
               <button type="button" class="button--active">Wszystkie</button>
             </li>
-            <li>
+            <li class="buttons-portfolio__item">
               <button type="button" class="button">Strony</button>
             </li>
-            <li><button type="button" class="button">Aplikacje</button></li>
-            <li><button type="button" class="button">Dizajn</button></li>
-            <li><button type="button" class="button">Marketing</button></li>
+            <li class="buttons-portfolio__item">
+              <button type="button" class="button">Aplikacje</button>
+            </li>
+            <li class="buttons-portfolio__item">
+              <button type="button" class="button">Dizajn</button>
+            </li>
+            <li class="buttons-portfolio__item">
+              <button type="button" class="button">Marketing</button>
+            </li>
           </ul>
           <ul class="portfolio-grid">
             <li class="portfolio-grid__element">
               <div class="portfolio-grid__hidden-element-container">
                 <img
-                  src="./images/technocrack.jpg"
+                  class="portfolio-grid__image"
+                  src="./images/technocrack1x.jpg"
                   alt="Strona internetowa wyświetlana na laptopie"
-                  width="370"
+                  width="450"
                   height="294"
                 />
 
@@ -99,9 +114,9 @@
             <li class="portfolio-grid__element">
               <div class="portfolio-grid__hidden-element-container">
                 <img
-                  src="./images/neworlean.jpg"
+                  src="./images/neworlean1x.jpg"
                   alt="Członkowie drużyn koszykarskich New Orlean oraz Golden Star walczący o piłkę"
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <div class="portfolio-grid__hidden-background">
@@ -123,9 +138,9 @@
             <li class="portfolio-grid__element">
               <div class="portfolio-grid__hidden-element-container">
                 <img
-                  src="./images/seafood.jpg"
+                  src="./images/seafood1x.jpg"
                   alt="Logo restauracji The Seafood z rekinem w tle"
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <div class="portfolio-grid__hidden-background">
@@ -148,9 +163,9 @@
             <li class="portfolio-grid__element">
               <div class="portfolio-grid__hidden-element-container">
                 <img
-                  src="./images/prime.jpg"
+                  src="./images/prime1x.jpg"
                   alt="Słuchawki nauszne"
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <div class="portfolio-grid__hidden-background">
@@ -171,9 +186,9 @@
             <li class="portfolio-grid__element">
               <div class="portfolio-grid__hidden-element-container">
                 <img
-                  src="./images/boxes.jpg"
+                  src="./images/boxes1x.jpg"
                   alt="Dwa pudełka leżące obok siebie, białe oraz brązowe"
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <div class="portfolio-grid__hidden-background">
@@ -193,9 +208,9 @@
             <li class="portfolio-grid__element">
               <div class="portfolio-grid__hidden-element-container">
                 <img
-                  src="./images/inspiration.jpg"
+                  src="./images/inspiration1x.jpg"
                   alt="Ekran, na którym wyświetlana jest strona internetowa"
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <div class="portfolio-grid__hidden-background">
@@ -217,9 +232,9 @@
             <li class="portfolio-grid__element">
               <div class="portfolio-grid__hidden-element-container">
                 <img
-                  src="./images/limited.jpg"
+                  src="./images/limited1x.jpg"
                   alt="Otwarty magazyn Limited Edition"
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <div class="portfolio-grid__hidden-background">
@@ -241,9 +256,9 @@
             <li class="portfolio-grid__element">
               <div class="portfolio-grid__hidden-element-container">
                 <img
-                  src="./images/lab.jpg"
+                  src="./images/lab1x.jpg"
                   alt="Przywieszka drewniana z ułożonymi pionowo napisami LAB EL TAG"
-                  width="370"
+                  width="450"
                   height="294"
                 />
                 <div class="portfolio-grid__hidden-background">
@@ -263,10 +278,9 @@
             <li class="portfolio-grid__element">
               <div class="portfolio-grid__hidden-element-container">
                 <img
-                  src="./images/business.jpg"
+                  class="portfolio-grid__image"
+                  src="./images/business1x.jpg"
                   alt="Osoba trzymająca dłonie na laptopie, na którego ekranie wyświetla się strona Growing Business"
-                  width="370"
-                  height="294"
                 />
                 <div class="portfolio-grid__hidden-background">
                   <p class="portfolio-grid__hidden-text">
@@ -287,7 +301,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container flex-row left">
+      <div class="container flex-center">
         <div class="footer-container">
           <a href="./index.html" class="logo--footer"
             ><span class="logo--color">Web</span>Studio</a
@@ -357,11 +371,11 @@
         </div>
 
         <div class="newsletter-container">
-          <form name="newsletter">
+          <form name="newsletter-container__form">
             <span class="newsletter-container__description"
               >Zapisz się do newslettera</span
             >
-            <div class="flex-row">
+            <div class="flex-center">
               <label
                 for="email"
                 name="email"
@@ -394,5 +408,82 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__btn js-close-menu">
+        <svg width="19" height="19">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div>
+        <ul class="mobile-menu__menu">
+          <li>
+            <a
+              href="./index.html"
+              class="mobile-menu__link mobile-menu__link--active"
+              >Agencja</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li><a href="#address" class="mobile-menu__link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mobile-menu__contacts">
+          <li>
+            <a href="tel:+48111111111" class="mobile-menu__contact-item"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__contact-item mobile-menu__contact-item--grey"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
