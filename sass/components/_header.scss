@@ -81,11 +81,13 @@
 .page-header {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
   gap: 93px;
   padding: 24px 0 25px 0;
   align-items: center;
   border-bottom: 1px solid #ececec;
   height: 100%;
+  max-width: 450px;
 }
 .header-menu-button {
   background-color: white;

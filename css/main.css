@@ -356,11 +356,13 @@ a {
 .page-header {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
   gap: 93px;
   padding: 24px 0 25px 0;
   align-items: center;
   border-bottom: 1px solid #ececec;
   height: 100%;
+  max-width: 450px;
 }
 
 .header-menu-button {
@@ -414,7 +416,7 @@ a {
   padding-bottom: 30px;
 }
 .index-specialities__icon {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -524,7 +526,7 @@ a {
 }
 
 .company-mobile {
-  width: 480px;
+  max-width: 480px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -665,7 +667,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 450px;
+  max-width: 450px;
 }
 .newsletter-container__input:-moz-placeholder-shown {
   color: rgba(255, 255, 255, 0.6);
