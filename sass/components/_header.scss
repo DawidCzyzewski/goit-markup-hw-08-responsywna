@@ -114,6 +114,7 @@
   &__list {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     gap: 50px;
     padding-left: 93px;
   }
@@ -174,12 +175,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:hover .header-contact__icon,
+    &:focus .header-contact__icon {
       @include mainHoverColor;
-
-      & .header-contact__icon {
-        @include mainHoverColor;
-      }
     }
   }
   &__icon {
@@ -190,5 +189,11 @@
 @media screen and (min-width: 768px) {
   .header-contact__link {
     font-size: 14px;
+  }
+  .page-header {
+    padding-bottom: 15px;
+  }
+  .flex-row {
+    align-items: center;
   }
 }

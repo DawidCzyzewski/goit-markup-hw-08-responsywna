@@ -29,9 +29,9 @@
 .index-specialities {
   @include flexCenter(column);
   padding-bottom: 60px;
-  & li:not(:last-child) {
-    padding-bottom: 30px;
-  }
+  // & li:not(:last-child) {
+  //   padding-bottom: 30px;
+  // }
   &__icon {
     max-width: 450px;
     height: 120px;
@@ -53,5 +53,15 @@
     color: getColor("secondary-text");
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+@media screen and (min-width: 768px) {
+  .index-specialities {
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    gap: 30px;
+    & li {
+      max-width: 350px;
+    }
   }
 }

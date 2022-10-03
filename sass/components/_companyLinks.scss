@@ -1,4 +1,4 @@
-.company-mobile {
+.company-container {
   max-width: 480px;
   display: flex;
   align-items: center;
@@ -28,11 +28,19 @@
       }
     }
   }
-
   &__icon {
     fill: getColor("companies&icons");
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .company-container {
+    max-width: 768px;
+  }
+  .company-link__logos {
+    width: 226px;
   }
 }
