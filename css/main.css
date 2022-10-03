@@ -518,6 +518,7 @@ a {
   align-items: center;
   flex-direction: column;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundmobile1x.jpg);
+  background-size: contain;
 }
 .index-background__text {
   font-weight: 900;
@@ -529,9 +530,7 @@ a {
 
 @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .index-background {
-    width: 480px;
-    height: 400px;
-    background-size: cover;
+    background-size: contain;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundmobile2x.jpg);
   }
 }
@@ -548,14 +547,14 @@ a {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .index-background {
     background-size: contain;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundtablet2x.jpg);
     max-width: 768px;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2.7916666666666665), (min-resolution: 268dpi), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2.7916666666666665), screen and (min-width: 768px) and (min-resolution: 268dpi), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 3dppx) {
   .index-background {
     background-size: contain;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundtablet3x.jpg);
@@ -564,22 +563,32 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .index-background {
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgrounddesktop1x.jpg);
     max-width: 1600px;
     height: 600px;
   }
+  .index-background__text {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    width: 700px;
+  }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .index-background {
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgrounddesktop2x.jpg);
     max-width: 1600px;
     height: 600px;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2.7916666666666665), (min-resolution: 268dpi), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.7916666666666665), screen and (min-width: 1200px) and (min-resolution: 268dpi), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
   .index-background {
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgrounddesktop3x.jpg);
     max-width: 1600px;
     height: 600px;
@@ -961,6 +970,9 @@ a {
 @media screen and (min-width: 1200px) {
   .newsletter-container__input {
     width: 358px;
+  }
+  .newsletter-container__description {
+    align-items: flex-start;
   }
 }
 .backdrop {
