@@ -47,6 +47,7 @@
 
 .team-background {
   background-color: getColor("buttons&team-background");
+  padding: 94px 0;
 }
 .team-figure {
   margin: 0;
@@ -88,9 +89,9 @@
   &__icon {
     fill: getColor("companies&icons");
     transition-property: background-color, fill;
-    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  transition-duration: 250ms;
 }
 @media screen and (min-width: 768px) {
   .team-section {
@@ -101,5 +102,11 @@
   }
   .team-section__card {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-section {
+    width: 1200px;
+    flex-wrap: nowrap;
   }
 }

@@ -147,3 +147,17 @@
     margin: 0 144px 60px 76px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .flex-center {
+    flex-wrap: nowrap;
+  }
+  // .footer-container {
+  //   margin: 0 144px 60px 76px;
+  // }
+  .footer-join {
+    margin: 70px 70px 70px 78px;
+  }
+  .footer-container {
+    margin: 0;
+  }
+}

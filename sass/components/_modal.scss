@@ -12,7 +12,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    width: 450px;
     min-height: 581px;
     background-color: var(--white);
   }
@@ -58,7 +58,7 @@
     color: getColor("main-text");
   }
   &__container {
-    width: 448px;
+    width: 80%;
     margin: 11px auto 20px;
   }
   &__label {
@@ -178,4 +178,14 @@
 .checkbox-hidden {
   appearance: none;
   visibility: none;
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    width: 528px;
+  }
+  .form-modal {
+    &__icon {
+      left: 70px;
+    }
+  }
 }
