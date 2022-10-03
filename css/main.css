@@ -126,7 +126,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  max-width: 768px;
   height: 100vh;
   padding: 48px 40px;
   background-color: var(--white);
@@ -196,6 +197,7 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 430px;
 }
 .mobile-menu__social-link {
   font-weight: 500;
