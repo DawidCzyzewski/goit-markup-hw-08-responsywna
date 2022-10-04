@@ -565,6 +565,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .index-background {
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgrounddesktop1x.jpg);
@@ -580,6 +581,7 @@ a {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .index-background {
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgrounddesktop2x.jpg);
@@ -591,6 +593,7 @@ a {
   .index-background {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgrounddesktop3x.jpg);
     max-width: 1600px;
     height: 600px;
