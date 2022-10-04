@@ -150,10 +150,10 @@
 @media screen and (min-width: 1200px) {
   .flex-center {
     flex-wrap: nowrap;
+    margin: 0 auto;
+    // align-items: baseline;
   }
-  // .footer-container {
-  //   margin: 0 144px 60px 76px;
-  // }
+
   .footer-join {
     margin: 70px 70px 70px 78px;
     align-items: flex-start;

@@ -33,7 +33,6 @@
   //   padding-bottom: 30px;
   // }
   &__icon {
-    max-width: 450px;
     height: 120px;
     display: flex;
     justify-content: center;
@@ -55,13 +54,14 @@
     line-height: 1.71;
   }
 }
+
 @media screen and (min-width: 768px) {
   .index-specialities {
     @include flexCenter(row);
     flex-wrap: wrap;
     gap: 30px;
     & li {
-      max-width: 350px;
+      flex-basis: calc((100% - 30px) / 2);
     }
   }
 }

@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   max-width: 768px;
   height: 100vh;
   padding: 48px 40px;
@@ -85,7 +85,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    min-width: 430px;
+    flex-wrap: wrap;
   }
 
   &__social-link {

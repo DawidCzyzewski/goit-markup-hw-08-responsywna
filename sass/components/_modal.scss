@@ -8,11 +8,12 @@
   opacity: 100%;
   transition: opacity 200ms linear, visibility 500ms linear;
   &__modal {
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    max-width: 450px;
     min-height: 581px;
     background-color: var(--white);
   }
@@ -179,9 +180,22 @@
   appearance: none;
   visibility: none;
 }
+@media screen and (max-width: 407px) {
+  .form-modal__name {
+    top: 134px;
+  }
+  .form-modal__telephone {
+    top: 199px;
+  }
+
+  .form-modal__email {
+    top: 265px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .backdrop__modal {
-    width: 528px;
+    width: 100%;
+    max-width: 528px;
   }
   .form-modal {
     &__icon {

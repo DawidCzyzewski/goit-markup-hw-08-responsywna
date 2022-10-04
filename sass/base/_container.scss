@@ -6,13 +6,10 @@
 //   flex-direction: row;
 // }
 .container {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 15px;
-  &--width {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-  }
+  width: 100%;
+  max-width: 1200px;
 }
 // @media screen and (min-width: 480px) {
 //   .container {
