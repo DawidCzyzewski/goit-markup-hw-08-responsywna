@@ -77,25 +77,27 @@
   gap: 8px;
   padding: 0 15px;
   margin-bottom: 40px;
-  &__item {
-    &:nth-of-type(1) .button--active {
-      width: 103px;
-    }
+  @media screen and (max-width: 768px) {
+    &__item {
+      &:nth-of-type(1) .button--active {
+        width: 103px;
+      }
 
-    &:nth-of-type(2) .button {
-      width: 128px;
-    }
+      &:nth-of-type(2) .button {
+        width: 128px;
+      }
 
-    &:nth-of-type(3) .button {
-      width: 145px;
-    }
+      &:nth-of-type(3) .button {
+        width: 145px;
+      }
 
-    &:nth-of-type(4) .button {
-      width: 103px;
-    }
+      &:nth-of-type(4) .button {
+        width: 103px;
+      }
 
-    &:nth-of-type(5) .button {
-      width: 130px;
+      &:nth-of-type(5) .button {
+        width: 130px;
+      }
     }
   }
 }

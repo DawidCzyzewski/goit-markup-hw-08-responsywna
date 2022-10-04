@@ -156,8 +156,17 @@
   // }
   .footer-join {
     margin: 70px 70px 70px 78px;
+    align-items: flex-start;
+    &__socialmedia {
+      margin-left: 0;
+    }
   }
   .footer-container {
     margin: 0;
+    align-items: flex-start;
+  }
+  .footer__address,
+  .footer__address p {
+    align-items: flex-start;
   }
 }

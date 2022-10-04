@@ -85,9 +85,9 @@
   gap: 93px;
   padding: 24px 0 25px 0;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  // border-bottom: 1px solid #ececec;
   height: 100%;
-  max-width: 450px;
+  // max-width: 450px;
 }
 .header-menu-button {
   background-color: white;
@@ -174,9 +174,9 @@
   .header-menu-button {
     display: none;
   }
-  .page-header {
-    max-width: 768px;
-  }
+  // .page-header {
+  //   max-width: 768px;
+  // }
 }
 @media screen and (max-width: 768px) {
   .header-nav {
@@ -198,9 +198,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .page-header {
-    max-width: 1200px;
-  }
+  // .page-header {
+  //   max-width: 1200px;
+  // }
   .header-contact {
     flex-direction: row;
   }

@@ -24,7 +24,9 @@
 .index-background {
   text-align: center;
   width: 100%;
-  max-width: 480px;
+  min-width: 320px;
+  background-position: center;
+  // max-width: 480px;
   margin: 0 auto;
   padding: 118px 0;
   gap: 30px;
@@ -35,20 +37,24 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/backgroundmobile1x.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   &__text {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
-    width: 365px;
+    min-width: 320px;
     color: var(--white);
+    @media screen and (max-width: 1200px) {
+      max-width: 365px;
+    }
   }
 }
 @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .index-background {
-    background-size: contain;
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -61,7 +67,7 @@
   (min-resolution: 268dpi),
   (min-resolution: 3dppx) {
   .index-background {
-    background-size: contain;
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -72,7 +78,7 @@
 }
 @media screen and (min-width: 768px) {
   .index-background {
-    background-size: contain;
+    background-size: cover;
 
     background-image: linear-gradient(
         to right,
@@ -80,13 +86,13 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/backgroundtablet1x.jpg);
-    max-width: 768px;
+    // max-width: 768px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .index-background {
-      background-size: contain;
+      background-size: cover;
 
       background-image: linear-gradient(
           to right,
@@ -94,7 +100,7 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../images/backgroundtablet2x.jpg);
-      max-width: 768px;
+      // max-width: 768px;
     }
   }
   @media (min-device-pixel-ratio: 3),
@@ -109,7 +115,7 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../images/backgroundtablet3x.jpg);
-      max-width: 768px;
+      // max-width: 768px;
     }
   }
 }
