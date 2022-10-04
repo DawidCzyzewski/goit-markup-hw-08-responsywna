@@ -135,9 +135,13 @@
     display: flex;
     justify-content: center;
   }
+  .flex-baseline {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 768px) {
-  .flex-center {
+  .flex-baseline {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -148,10 +152,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .flex-center {
+  .flex-baseline {
     flex-wrap: nowrap;
     margin: 0 auto;
-    // align-items: baseline;
+    flex-direction: row;
   }
 
   .footer-join {
