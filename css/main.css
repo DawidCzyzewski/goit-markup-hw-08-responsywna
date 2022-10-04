@@ -1142,8 +1142,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 448px;
+  justify-content: flex-start;
 }
 .form-modal__terms-link {
   font-size: 14px;
@@ -1156,7 +1155,7 @@ a {
   color: var(--blue);
 }
 .form-modal__terms-paragraph {
-  margin-left: 7px;
+  margin-left: 5px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1215,6 +1214,14 @@ a {
   }
   .form-modal__email {
     top: 265px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .form-modal__terms-link,
+.form-modal__terms-paragraph {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
