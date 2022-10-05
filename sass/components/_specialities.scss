@@ -60,6 +60,9 @@
     @include flexCenter(row);
     flex-wrap: wrap;
     gap: 30px;
+    &__heading {
+      text-align: start;
+    }
     & li {
       flex-basis: calc((100% - 30px) / 2);
     }
@@ -70,6 +73,7 @@
     @include flexCenter(row);
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 0;
     & li {
       max-width: 270px;
     }

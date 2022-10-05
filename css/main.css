@@ -209,6 +209,11 @@ a {
   transform: rotate(90deg);
 }
 
+@media screen and (min-width: 780px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .portfolio-grid {
   display: flex;
   flex-direction: row;
@@ -242,7 +247,6 @@ a {
   align-items: center;
   position: relative;
   overflow: hidden;
-  height: 294px;
 }
 .portfolio-grid__hidden-background {
   position: absolute;
@@ -250,7 +254,7 @@ a {
   width: 100%;
   height: 100%;
   font-size: 18px;
-  transform: translateY(400px);
+  transform: translateY(600px);
   transition: transform 250ms linear;
 }
 .portfolio-grid__hidden-text {
@@ -336,6 +340,12 @@ a {
   color: var(--white);
 }
 
+@media screen and (max-width: 1200px) {
+  .logo, .logo--color, .logo--footer {
+    font-size: 24px;
+    line-height: 0.72;
+  }
+}
 .button, .button--functional, .button--active {
   background-color: var(--grey);
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
@@ -638,6 +648,9 @@ a {
     flex-wrap: wrap;
     gap: 30px;
   }
+  .index-specialities__heading {
+    text-align: start;
+  }
   .index-specialities li {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -650,6 +663,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 0;
   }
   .index-specialities li {
     max-width: 270px;
@@ -727,20 +741,36 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 1200px) {
+  .team-section__social-icon-list {
+    justify-content: center;
+  }
+  .team-section__social-icon-card {
+    margin: 10px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-section {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1999px) {
   .team-section__card {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team-section {
-    width: 1200px;
+    max-width: 1200px;
     flex-wrap: nowrap;
+  }
+  .team-section__card {
+    min-width: 240px;
+  }
+  .flex-space-around {
+    justify-content: space-around;
   }
 }
 .social-icon {
@@ -856,7 +886,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 70px auto;
+  margin: 60px auto;
 }
 .footer-join__heading {
   font-weight: 700;
@@ -903,10 +933,27 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
+    align-items: flex-start;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .flex-baseline {
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer-container {
-    margin: 0 144px 60px 76px;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-container {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-join {
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -914,9 +961,10 @@ a {
     flex-wrap: nowrap;
     margin: 0 auto;
     flex-direction: row;
+    align-items: baseline;
   }
   .footer-join {
-    margin: 70px 70px 70px 78px;
+    margin: 0 auto;
     align-items: flex-start;
   }
   .footer-join__socialmedia {
@@ -956,12 +1004,13 @@ a {
 }
 .newsletter-container__input {
   background-color: rgba(0, 0, 0, 0.15);
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  min-width: 320px;
   max-width: 450px;
 }
 .newsletter-container__input:-moz-placeholder-shown {
@@ -983,7 +1032,18 @@ a {
   margin-left: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .newsletter-container {
+    width: 100%;
+  }
+  .newsletter-container__label {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
+  .newsletter-container {
+    margin-left: 20px;
+  }
   .newsletter-container__input {
     width: 450px;
   }
@@ -992,6 +1052,9 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .newsletter-container {
+    margin: 0 auto;
+  }
   .newsletter-container__input {
     width: 358px;
   }
